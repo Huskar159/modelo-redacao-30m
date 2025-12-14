@@ -1,6 +1,6 @@
 import { SolutionSection } from './types';
 
-export const SOLUTIONS: SolutionSection[] = [
+export const SOLUTIONS_VOL_1: SolutionSection[] = [
   {
     title: "Fichas 01 a 10: O Uso da Vírgula",
     theme: 'teal',
@@ -497,6 +497,501 @@ export const SOLUTIONS: SolutionSection[] = [
           { id: 10, correction: "Atualmente, a tecnologia domina o mundo.", explanation: "Colocar vírgula no tempo deslocado." },
         ]
       },
+    ]
+  }
+];
+
+export const SOLUTIONS_VOL_2: SolutionSection[] = [
+  {
+    title: "Fichas 31 a 45: Concordância Verbal e Nominal",
+    theme: 'indigo',
+    sheets: [
+      {
+        id: "#31",
+        topic: "O Núcleo do Sujeito",
+        items: [
+          { id: 1, correction: "O conjunto de regras deve ser respeitado.", explanation: "Núcleo: Conjunto - Singular." },
+          { id: 2, correction: "A mudança nos hábitos alimentares causou melhorias.", explanation: "Núcleo: Mudança - Singular." },
+          { id: 3, correction: "O uso de celulares e tablets aumentou na pandemia.", explanation: "Núcleo: Uso - Singular." },
+          { id: 4, correction: "A opinião dos especialistas diverge sobre o tema.", explanation: "Núcleo: Opinião - Singular." },
+          { id: 5, correction: "O grupo de manifestantes fechou a rua.", explanation: "Núcleo: Grupo - Singular." },
+          { id: 6, correction: "A falta de investimentos em saúde gera caos.", explanation: "Núcleo: Falta - Singular." },
+          { id: 7, correction: "O grito dos torcedores ecoou no estádio.", explanation: "Núcleo: Grito - Singular." },
+          { id: 8, correction: "A produção de carros elétricos cresceu este ano.", explanation: "Núcleo: Produção - Singular." },
+          { id: 9, correction: "A maioria das pessoas concorda (ou concordam).", explanation: "Núcleo: Maioria - Singular / Partitivo: Plural." },
+          { id: 10, correction: "A lista de aprovados saiu ontem.", explanation: "Núcleo: Lista - Singular." },
+        ]
+      },
+      {
+        id: "#32",
+        topic: "Matemática Verbal (Sujeito Composto)",
+        items: [
+          { id: 1, correction: "A fome e a miséria afetam o país.", explanation: "" },
+          { id: 2, correction: "O pai e a mãe viajaram de férias.", explanation: "" },
+          { id: 3, correction: "Educação e saúde são prioridades.", explanation: "" },
+          { id: 4, correction: "O cão e o gato brigam todo dia.", explanation: "" },
+          { id: 5, correction: "Chegaram a encomenda e a carta.", explanation: "" },
+          { id: 6, correction: "O aluno e o professor conversaram.", explanation: "" },
+          { id: 7, correction: "Arroz e feijão fazem bem à saúde.", explanation: "" },
+          { id: 8, correction: "A teoria e a prática devem andar juntas.", explanation: "" },
+          { id: 9, correction: "O medo e a insegurança dominam a cidade.", explanation: "" },
+          { id: 10, correction: "Eu e você formaremos uma bela dupla.", explanation: "" },
+        ]
+      },
+      {
+        id: "#33",
+        topic: "O Dilema (Partitivos)",
+        items: [
+          { id: 1, correction: "Grande parte dos alunos faltou.", explanation: "(C) Concorda com 'Grande parte'." },
+          { id: 2, correction: "Grande parte dos alunos faltaram.", explanation: "(C) Concorda com 'alunos'." },
+          { id: 3, correction: "A minoria dos candidatos passou.", explanation: "(C)" },
+          { id: 4, correction: "A minoria dos candidatos passaram.", explanation: "(C)" },
+          { id: 5, correction: "Metade da sala dormiu.", explanation: "(C)" },
+          { id: 6, correction: "1% dos brasileiros acredita nisso.", explanation: "(C)" },
+          { id: 7, correction: "1% dos brasileiros acreditam nisso.", explanation: "(C)" },
+          { id: 8, correction: "Uma porção de pássaros voou.", explanation: "(C)" },
+          { id: 9, correction: "Uma porção de pássaros voaram.", explanation: "(C)" },
+          { id: 10, correction: "A maior parte das verbas foi desviada.", explanation: "(C)" },
+        ]
+      },
+      {
+        id: "#34",
+        topic: "O Impessoal (Haver e Fazer)",
+        items: [
+          { id: 1, correction: "Houve muitos acidentes na estrada.", explanation: "Haver = Existir. Sem plural." },
+          { id: 2, correction: "Faz dez dias que chove.", explanation: "Fazer tempo = Sem plural." },
+          { id: 3, correction: "Deve haver soluções para isso.", explanation: "Locução segue o principal. Sem plural." },
+          { id: 4, correction: "Havia muitas pessoas na festa.", explanation: "Sem plural." },
+          { id: 5, correction: "Vai fazer três meses que estudo.", explanation: "(C) Correto." },
+          { id: 6, correction: "Vai fazer três meses...", explanation: "Locução segue o principal 'Fazer'." },
+          { id: 7, correction: "Há anos não vejo meu primo.", explanation: "(C) Correto." },
+          { id: 8, correction: "Havia dúvidas sobre o tema.", explanation: "(C) Correto." },
+          { id: 9, correction: "Faz verões muito quentes aqui.", explanation: "Fazer clima = Sem plural." },
+          { id: 10, correction: "Existiam muitas pessoas.", explanation: "Existir TEM plural. Correto." },
+        ]
+      },
+      {
+        id: "#35",
+        topic: "Vende-se Casas (Partícula Apassivadora)",
+        items: [
+          { id: 1, correction: "Vendem-se terrenos.", explanation: "Terrenos são vendidos." },
+          { id: 2, correction: "Compra-se ouro.", explanation: "Ouro é comprado - Singular." },
+          { id: 3, correction: "Fazem-se bolos.", explanation: "Bolos são feitos." },
+          { id: 4, correction: "Consertam-se bicicletas.", explanation: "Bicicletas são consertadas." },
+          { id: 5, correction: "Doam-se livros usados.", explanation: "Livros são doados." },
+          { id: 6, correction: "Ouvem-se gritos na rua.", explanation: "Gritos são ouvidos." },
+          { id: 7, correction: "Esperam-se resultados melhores.", explanation: "Resultados são esperados." },
+          { id: 8, correction: "Exigem-se documentos originais.", explanation: "Documentos são exigidos." },
+          { id: 9, correction: "Analisam-se propostas.", explanation: "Propostas são analisadas." },
+          { id: 10, correction: "Veem-se pássaros no céu.", explanation: "Pássaros são vistos." },
+        ]
+      },
+      {
+        id: "#36",
+        topic: "Precisa-se de (Índice de Indeterminação)",
+        items: [
+          { id: 1, correction: "Necessita-se de novos equipamentos.", explanation: "Verbo + Preposição = Singular." },
+          { id: 2, correction: "Confia-se em Deus.", explanation: "Singular." },
+          { id: 3, correction: "Trata-se de casos graves.", explanation: "Singular." },
+          { id: 4, correction: "Acredita-se em milagres.", explanation: "(C) Correto." },
+          { id: 5, correction: "Obedece-se aos regulamentos.", explanation: "Singular." },
+          { id: 6, correction: "Assiste-se aos filmes.", explanation: "(C) Correto." },
+          { id: 7, correction: "Recorre-se aos tribunais.", explanation: "Singular." },
+          { id: 8, correction: "Vive-se bem aqui.", explanation: "(C) Correto." },
+          { id: 9, correction: "Precisa-se de ajudantes.", explanation: "(C) Correto." },
+          { id: 10, correction: "Fala-se de política.", explanation: "(C) Correto." },
+        ]
+      },
+      {
+        id: "#37",
+        topic: "O Camaleão (Adjetivo)",
+        items: [
+          { id: 1, correction: "A casa e o carro são novos.", explanation: "Masc. Plural." },
+          { id: 2, correction: "Ela tem olhos e cabelos pretos.", explanation: "Masc. Plural." },
+          { id: 3, correction: "Comprei sapatos e camisas caros.", explanation: "Masc. Plural." },
+          { id: 4, correction: "A justiça julgou necessária a medida.", explanation: "Concorda com medida." },
+          { id: 5, correction: "Água é bom para a saúde.", explanation: "Sem artigo = Masculino/Neutro." },
+          { id: 6, correction: "A água é boa para a saúde.", explanation: "Com artigo = Feminino." },
+          { id: 7, correction: "Bebida alcoólica é proibido.", explanation: "Sem artigo." },
+          { id: 8, correction: "A bebida alcoólica é proibida.", explanation: "Com artigo." },
+          { id: 9, correction: "Encontrei a porta e o portão abertos.", explanation: "Masc. Plural." },
+          { id: 10, correction: "O aluno e a aluna são dedicados.", explanation: "Masc. Plural." },
+        ]
+      },
+      {
+        id: "#38",
+        topic: "Anexo e Incluso (Os Documentos)",
+        items: [
+          { id: 1, correction: "Segue anexa a carta.", explanation: "" },
+          { id: 2, correction: "Vão anexos os boletos.", explanation: "" },
+          { id: 3, correction: "As fotos estão inclusas.", explanation: "" },
+          { id: 4, correction: "O documento segue anexo.", explanation: "" },
+          { id: 5, correction: "Os recibos vão anexos (ou em anexo).", explanation: "" },
+          { id: 6, correction: "A declaração vai inclusa.", explanation: "" },
+          { id: 7, correction: "Remeto anexas as cópias.", explanation: "" },
+          { id: 8, correction: "O gráfico está anexo.", explanation: "" },
+          { id: 9, correction: "As listas seguem inclusas.", explanation: "" },
+          { id: 10, correction: "Seguem anexos os comprovantes.", explanation: "" },
+        ]
+      },
+      {
+        id: "#39",
+        topic: "É Proibido / É Proibida",
+        items: [
+          { id: 1, correction: "É proibido entrada de estranhos.", explanation: "(C) Sem 'a'." },
+          { id: 2, correction: "É proibida a entrada de estranhos.", explanation: "Com 'a'." },
+          { id: 3, correction: "Paciência é necessário.", explanation: "(C) Sem 'a'." },
+          { id: 4, correction: "A paciência é necessária.", explanation: "(C) Com 'a'." },
+          { id: 5, correction: "Verdura é bom.", explanation: "(C) Sem 'a'." },
+          { id: 6, correction: "A verdura é boa.", explanation: "(C) Com 'a'." },
+          { id: 7, correction: "É permitida a presença de pais.", explanation: "Com 'a'." },
+          { id: 8, correction: "É permitido permanência.", explanation: "(C) Sem 'a'." },
+          { id: 9, correction: "Coragem é necessário.", explanation: "(C) Sem 'a'." },
+          { id: 10, correction: "A coragem é necessária.", explanation: "(C) Com 'a'." },
+        ]
+      },
+      {
+        id: "#40",
+        topic: "Menos e Bastante",
+        items: [
+          { id: 1, correction: "Tenho menos paciência hoje.", explanation: "Menos é invariável." },
+          { id: 2, correction: "Havia bastantes motivos para reclamar.", explanation: "Bastantes = Muitos." },
+          { id: 3, correction: "Ela tem menos chances.", explanation: "Menos é invariável." },
+          { id: 4, correction: "Compramos bastantes frutas.", explanation: "Bastantes = Muitas." },
+          { id: 5, correction: "Eles estão bastante cansados.", explanation: "Bastante = Muito. Advérbio não varia." },
+          { id: 6, correction: "Quero menos comida.", explanation: "" },
+          { id: 7, correction: "Existem bastantes opções.", explanation: "Bastantes = Muitas." },
+          { id: 8, correction: "Menos palavras, mais ação.", explanation: "" },
+          { id: 9, correction: "Serviram bastantes pratos.", explanation: "" },
+          { id: 10, correction: "Ela fala menos que ele.", explanation: "" },
+        ]
+      },
+      {
+        id: "#41",
+        topic: "Porcentagem",
+        items: [
+          { id: 1, correction: "...faltou (1%) / ...faltaram (alunos).", explanation: "Ambos aceitos." },
+          { id: 2, correction: "...vacinou-se (pop.) / ...vacinaram-se (50%).", explanation: "" },
+          { id: 3, correction: "...preferem.", explanation: "30% plural." },
+          { id: 4, correction: "...disse.", explanation: "1,5% < 2 é singular." },
+          { id: 5, correction: "...vota (eleitorado) / ...votam (20%).", explanation: "" },
+          { id: 6, correction: "...concorda (maioria) / ...concordam (10%).", explanation: "" },
+          { id: 7, correction: "...foram.", explanation: "90% plural." },
+          { id: 8, correction: "...passou (turma) / ...passaram (25%).", explanation: "" },
+          { id: 9, correction: "...sumiu.", explanation: "1% singular." },
+          { id: 10, correction: "...ficaram.", explanation: "50% plural." },
+        ]
+      },
+      {
+        id: "#42",
+        topic: "Silepse (Concordância Ideológica)",
+        items: [
+          { id: 1, correction: "Os estudantes queremos mudanças.", explanation: "(Nós)." },
+          { id: 2, correction: "Os cidadãos pagamos impostos.", explanation: "(Nós)." },
+          { id: 3, correction: "A turma estamos felizes.", explanation: "(Nós)." },
+          { id: 4, correction: "O povo brasileiro lutamos.", explanation: "(Nós)." },
+          { id: 5, correction: "A população sofremos.", explanation: "(Nós)." },
+          { id: 6, correction: "Todos sabíamos.", explanation: "(Nós)." },
+          { id: 7, correction: "Os homens buscamos paz.", explanation: "(Nós)." },
+          { id: 8, correction: "A galera gritamos.", explanation: "(Nós)." },
+          { id: 9, correction: "O casal brigamos.", explanation: "(Nós)." },
+          { id: 10, correction: "São Paulo é poluído.", explanation: "(A cidade de SP)." },
+        ]
+      },
+      {
+        id: "#43",
+        topic: "Um e Outro / Nem um nem outro",
+        items: [
+          { id: 1, correction: "Um e outro compareceram.", explanation: "(Plural)." },
+          { id: 2, correction: "Nem um nem outro aceitou.", explanation: "(Singular preferencial)." },
+          { id: 3, correction: "Um ou outro ganhará.", explanation: "(Singular - exclusão)." },
+          { id: 4, correction: "Uma e outra questão são difíceis.", explanation: "Substantivo no singular, verbo no plural." },
+          { id: 5, correction: "Nem eu nem você iremos.", explanation: "(Nós)." },
+          { id: 6, correction: "Ou ele ou eu serei.", explanation: "(Exclusão)." },
+          { id: 7, correction: "Pedro ou Paulo casará.", explanation: "(Exclusão)." },
+          { id: 8, correction: "Laranja ou limão fazem.", explanation: "(Adição)." },
+          { id: 9, correction: "Um e outro disseram.", explanation: "(Plural)." },
+          { id: 10, correction: "Nem um nem outro sabia.", explanation: "(Singular)." },
+        ]
+      },
+      {
+        id: "#44",
+        topic: "O Relógio (Dar, Bater, Soar)",
+        items: [
+          { id: 1, correction: "Deu uma hora da tarde.", explanation: "(Singular)." },
+          { id: 2, correction: "Deram cinco horas no sino.", explanation: "(Plural)." },
+          { id: 3, correction: "O sino bateu cinco horas.", explanation: "Sujeito: O sino." },
+          { id: 4, correction: "Soaram dez badaladas.", explanation: "(Plural)." },
+          { id: 5, correction: "Bateu meio-dia.", explanation: "(Singular)." },
+          { id: 6, correction: "Bateu meia-noite.", explanation: "(Singular)." },
+          { id: 7, correction: "O relógio da sala deu doze horas.", explanation: "Sujeito: O relógio." },
+          { id: 8, correction: "Já deram 11 horas?", explanation: "(Plural)." },
+          { id: 9, correction: "Faltam 5 minutos para darem 10 horas.", explanation: "(Plural)." },
+          { id: 10, correction: "Vão dar duas horas.", explanation: "(Plural)." },
+        ]
+      },
+      {
+        id: "#45",
+        topic: "O Mix (Revisão de Concordância)",
+        items: [
+          { id: 1, correction: "Faz dias que não chove.", explanation: "Fazer tempo = singular." },
+          { id: 2, correction: "Alugam-se quartos.", explanation: "Quartos são alugados = plural." },
+          { id: 3, correction: "Precisa-se de vendedores.", explanation: "(C) Preposição = singular." },
+          { id: 4, correction: "A maioria dos alunos saíram (ou saiu).", explanation: "(C) Correto." },
+          { id: 5, correction: "Seguem anexos os documentos.", explanation: "" },
+          { id: 6, correction: "É proibido entrada.", explanation: "(C) Sem 'a' = neutro." },
+          { id: 7, correction: "É proibida a entrada.", explanation: "Com 'a' = feminino." },
+          { id: 8, correction: "Menos pessoas vieram.", explanation: "Invariável." },
+          { id: 9, correction: "O relógio deu três horas.", explanation: "Sujeito: relógio." },
+          { id: 10, correction: "A falta de recursos causou a greve.", explanation: "Núcleo: falta." },
+        ]
+      }
+    ]
+  },
+  {
+    title: "Fichas 46 a 60: Regência Verbal e Nominal",
+    theme: 'amber',
+    sheets: [
+      {
+        id: "#46",
+        topic: "O Verbo Assistir",
+        items: [
+          { id: 1, correction: "Assistimos ao documentário.", explanation: "(Ver)." },
+          { id: 2, correction: "O bombeiro assistiu o ferido.", explanation: "(Ajudar)." },
+          { id: 3, correction: "Ela gosta de assistir às novelas.", explanation: "(Ver)." },
+          { id: 4, correction: "Assistimos ao pôr do sol.", explanation: "(Ver)." },
+          { id: 5, correction: "O técnico assistiu o jogador.", explanation: "(Ajudar)." },
+          { id: 6, correction: "Vou assistir a esse filme.", explanation: "(Ver)." },
+          { id: 7, correction: "A enfermeira assistiu o doente.", explanation: "(Ajudar)." },
+          { id: 8, correction: "Nunca assisti a um jogo...", explanation: "(Ver)." },
+          { id: 9, correction: "O governo deve assistir as famílias.", explanation: "(Ajudar)." },
+          { id: 10, correction: "Assistimos à peça de teatro.", explanation: "(Ver)." },
+        ]
+      },
+      {
+        id: "#47",
+        topic: "O Verbo Aspirar",
+        items: [
+          { id: 1, correction: "Aspira à vaga.", explanation: "(Desejar)." },
+          { id: 2, correction: "Aspira o pó.", explanation: "(Sugar)." },
+          { id: 3, correction: "Aspira ao sucesso.", explanation: "(Desejar)." },
+          { id: 4, correction: "Aspirar o aroma.", explanation: "(Cheirar)." },
+          { id: 5, correction: "Aspira ao poder.", explanation: "(Desejar)." },
+          { id: 6, correction: "Aspira a uma carreira.", explanation: "(Desejar)." },
+          { id: 7, correction: "Aspiramos o ar puro.", explanation: "(Respirar)." },
+          { id: 8, correction: "Aspira à aprovação.", explanation: "(Desejar)." },
+          { id: 9, correction: "Aspirou o gás tóxico.", explanation: "(Respirar)." },
+          { id: 10, correction: "Aspiramos a dias melhores.", explanation: "(Desejar)." },
+        ]
+      },
+      {
+        id: "#48",
+        topic: "O Verbo Visar",
+        items: [
+          { id: 1, correction: "O estudo visa a aprovação.", explanation: "(C) Aceitável sem crase, mas ideal com: visa à." },
+          { id: 2, correction: "O policial visou o alvo.", explanation: "(C) Mirou." },
+          { id: 3, correction: "O projeto visa ao desenvolvimento.", explanation: "Visa ao." },
+          { id: 4, correction: "O chefe visou os documentos.", explanation: "(C) Assinou." },
+          { id: 5, correction: "A medida visa à redução.", explanation: "(C) Objetivo." },
+          { id: 6, correction: "Visou o centro.", explanation: "Mirou." },
+          { id: 7, correction: "Visa a melhoria (ou à melhoria).", explanation: "(C)" },
+          { id: 8, correction: "Visa ao lucro.", explanation: "" },
+          { id: 9, correction: "Não visou o cheque.", explanation: "(C) Assinou." },
+          { id: 10, correction: "Visa ao progresso.", explanation: "(C)" },
+        ]
+      },
+      {
+        id: "#49",
+        topic: "Esquecer e Lembrar",
+        items: [
+          { id: 1, correction: "Esqueci a chave.", explanation: "" },
+          { id: 2, correction: "Me esqueci da chave.", explanation: "" },
+          { id: 3, correction: "Nos lembramos de você.", explanation: "" },
+          { id: 4, correction: "Lembramos o caso.", explanation: "" },
+          { id: 5, correction: "Esqueceu de pagar.", explanation: "" },
+          { id: 6, correction: "Esqueceu a carteira.", explanation: "" },
+          { id: 7, correction: "Me esquecerei deste dia.", explanation: "" },
+          { id: 8, correction: "Lembre o recado.", explanation: "" },
+          { id: 9, correction: "Lembre-se do recado.", explanation: "" },
+          { id: 10, correction: "Esqueceram de tudo.", explanation: "" },
+        ]
+      },
+      {
+        id: "#50",
+        topic: "Obedecer",
+        items: [
+          { id: 1, correction: "Obedecer ao regulamento.", explanation: "" },
+          { id: 2, correction: "Não obedece aos pais.", explanation: "" },
+          { id: 3, correction: "Obedeceu à sinalização.", explanation: "" },
+          { id: 4, correction: "Obedeceu à ordem.", explanation: "" },
+          { id: 5, correction: "Obedeça a seus instintos.", explanation: "Ou aos." },
+          { id: 6, correction: "Obedece ao comandante.", explanation: "" },
+          { id: 7, correction: "Obedecer à Constituição.", explanation: "" },
+          { id: 8, correction: "Desobedeceu às regras.", explanation: "" },
+          { id: 9, correction: "Obedeça à placa.", explanation: "" },
+          { id: 10, correction: "Obedeceu ao professor.", explanation: "" },
+        ]
+      },
+      {
+        id: "#51",
+        topic: "Preferir",
+        items: [
+          { id: 1, correction: "Prefiro português a matemática.", explanation: "" },
+          { id: 2, correction: "Ela prefere sair a ficar em casa.", explanation: "" },
+          { id: 3, correction: "Prefiro ler a assistir TV.", explanation: "" },
+          { id: 4, correction: "Prefiro praia a campo.", explanation: "" },
+          { id: 5, correction: "Prefere futebol a vôlei.", explanation: "" },
+          { id: 6, correction: "Prefiro doce a salgado.", explanation: "" },
+          { id: 7, correction: "Prefiro a verdade à mentira.", explanation: "" },
+          { id: 8, correction: "Prefere trabalhar a estudar.", explanation: "" },
+          { id: 9, correction: "Prefiro dia a noite.", explanation: "" },
+          { id: 10, correction: "Prefiro café a chá.", explanation: "" },
+        ]
+      },
+      {
+        id: "#52",
+        topic: "Pagar e Perdoar",
+        items: [
+          { id: 1, correction: "Paguei a conta.", explanation: "(Coisa)." },
+          { id: 2, correction: "Paguei ao dentista.", explanation: "(Pessoa)." },
+          { id: 3, correction: "Deus perdoa aos pecadores.", explanation: "(Pessoa)." },
+          { id: 4, correction: "Perdoou a dívida.", explanation: "(Coisa)." },
+          { id: 5, correction: "Pagamos aos funcionários.", explanation: "" },
+          { id: 6, correction: "Pagar o aluguel.", explanation: "" },
+          { id: 7, correction: "Pagou aos fornecedores.", explanation: "" },
+          { id: 8, correction: "Perdoou a traição.", explanation: "" },
+          { id: 9, correction: "Paguei o imposto.", explanation: "" },
+          { id: 10, correction: "Perdoe ao teu irmão.", explanation: "" },
+        ]
+      },
+      {
+        id: "#53",
+        topic: "Chegar e Ir",
+        items: [
+          { id: 1, correction: "Fui à festa.", explanation: "" },
+          { id: 2, correction: "Chegamos ao Brasil.", explanation: "" },
+          { id: 3, correction: "Vou ao médico.", explanation: "" },
+          { id: 4, correction: "Chegou à escola.", explanation: "" },
+          { id: 5, correction: "Iremos à praia.", explanation: "" },
+          { id: 6, correction: "Foi ao jogo.", explanation: "" },
+          { id: 7, correction: "Chegamos ao limite.", explanation: "" },
+          { id: 8, correction: "Fomos ao shopping.", explanation: "" },
+          { id: 9, correction: "Cheguei a São Paulo.", explanation: "" },
+          { id: 10, correction: "Vai ao banco.", explanation: "" },
+        ]
+      },
+      {
+        id: "#54",
+        topic: "Namorar",
+        items: [
+          { id: 1, correction: "Ela namora meu primo.", explanation: "" },
+          { id: 2, correction: "Quer me namorar?", explanation: "" },
+          { id: 3, correction: "Pedro namora a vizinha.", explanation: "" },
+          { id: 4, correction: "Eles namoram com frequência.", explanation: "(Modo - Certo)." },
+          { id: 5, correction: "Ana namora o Paulo.", explanation: "" },
+          { id: 6, correction: "Ele quer namorá-la.", explanation: "" },
+          { id: 7, correction: "Namoramos por dois anos.", explanation: "(Tempo - Certo)." },
+          { id: 8, correction: "Você namora quem?", explanation: "" },
+          { id: 9, correction: "Romeu namorou Julieta.", explanation: "" },
+          { id: 10, correction: "Namoro livros.", explanation: "" },
+        ]
+      },
+      {
+        id: "#55",
+        topic: "Implicar",
+        items: [
+          { id: 1, correction: "...implica reprovação.", explanation: "" },
+          { id: 2, correction: "...implicou multa.", explanation: "" },
+          { id: 3, correction: "...implica gastos.", explanation: "" },
+          { id: 4, correction: "...implica mais responsabilidade.", explanation: "" },
+          { id: 5, correction: "...implica demissão.", explanation: "" },
+          { id: 6, correction: "Isso não implica dizer...", explanation: "" },
+          { id: 7, correction: "...implica mudanças.", explanation: "" },
+          { id: 8, correction: "...implica dedicação.", explanation: "" },
+          { id: 9, correction: "...implica consentimento.", explanation: "" },
+          { id: 10, correction: "...implica sacrifícios.", explanation: "" },
+        ]
+      },
+      {
+        id: "#56",
+        topic: "Regência Nominal I",
+        items: [
+          { id: 1, correction: "Prejudicial à saúde.", explanation: "" },
+          { id: 2, correction: "Aptos a trabalhar.", explanation: "" },
+          { id: 3, correction: "Medo de altura.", explanation: "" },
+          { id: 4, correction: "Favorável à mudança.", explanation: "" },
+          { id: 5, correction: "Compatível com meu trabalho.", explanation: "" },
+          { id: 6, correction: "Capaz de fazer.", explanation: "" },
+          { id: 7, correction: "Impróprio para menores.", explanation: "" },
+          { id: 8, correction: "Respeito aos idosos.", explanation: "" },
+          { id: 9, correction: "Ansioso pelo resultado.", explanation: "" },
+          { id: 10, correction: "Fiel a seus princípios.", explanation: "" },
+        ]
+      },
+      {
+        id: "#57",
+        topic: "Onde ou Aonde?",
+        items: [
+          { id: 1, correction: "Aonde você vai?", explanation: "" },
+          { id: 2, correction: "Onde está?", explanation: "" },
+          { id: 3, correction: "Aonde iremos parar?", explanation: "" },
+          { id: 4, correction: "A casa onde moro.", explanation: "" },
+          { id: 5, correction: "O lugar aonde cheguei.", explanation: "" },
+          { id: 6, correction: "Onde trabalha?", explanation: "" },
+          { id: 7, correction: "Aonde quer chegar?", explanation: "" },
+          { id: 8, correction: "Fique onde está.", explanation: "" },
+          { id: 9, correction: "Onde coloquei.", explanation: "" },
+          { id: 10, correction: "Aonde o vento levar.", explanation: "" },
+        ]
+      },
+      {
+        id: "#58",
+        topic: "O \"Mesmo\" (Regência Compartilhada)",
+        items: [
+          { id: 1, correction: "Entrei em casa e saí dela.", explanation: "" },
+          { id: 2, correction: "Li o livro e gostei dele.", explanation: "" },
+          { id: 3, correction: "Obedeço ao meu pai e respeito-o.", explanation: "" },
+          { id: 4, correction: "Vi e comprei a camisa.", explanation: "(C) Mesma regência: VTD." },
+          { id: 5, correction: "Necessito de você e confio em você.", explanation: "" },
+          { id: 6, correction: "Amo e adoro chocolate.", explanation: "(C) Mesma regência: VTD." },
+          { id: 7, correction: "Cheguei à escola e saí dela.", explanation: "" },
+          { id: 8, correction: "Entrou na sala e saiu dela.", explanation: "" },
+          { id: 9, correction: "Concordo e discordo de você.", explanation: "(C)" },
+          { id: 10, correction: "Comprei e paguei o carro.", explanation: "(C)" },
+        ]
+      },
+      {
+        id: "#59",
+        topic: "Para vs. Por",
+        items: [
+          { id: 1, correction: "Estude para passar.", explanation: "(Finalidade)." },
+          { id: 2, correction: "Preso por roubo.", explanation: "(Causa)." },
+          { id: 3, correction: "Vou para casa.", explanation: "(Direção)." },
+          { id: 4, correction: "Fiz por você.", explanation: "(Benefício)." },
+          { id: 5, correction: "Escrito por mim.", explanation: "(Agente)." },
+          { id: 6, correction: "Entregue a/para ele.", explanation: "" },
+          { id: 7, correction: "Trocamos por uma moto.", explanation: "(Troca)." },
+          { id: 8, correction: "Viajamos de/por avião.", explanation: "(Meio)." },
+          { id: 9, correction: "Olhe para frente.", explanation: "(Direção)." },
+          { id: 10, correction: "Apreço por ele.", explanation: "(Sentimento)." },
+        ]
+      },
+      {
+        id: "#60",
+        topic: "Teste Final Mês 2",
+        items: [
+          { id: 1, correction: "Houve problemas no projeto que visa ao lucro.", explanation: "" },
+          { id: 2, correction: "Faz dois meses que cheguei a casa.", explanation: "" },
+          { id: 3, correction: "Prefiro doce a salgado.", explanation: "" },
+          { id: 4, correction: "Obedeça ao regulamento e pague ao funcionário.", explanation: "" },
+          { id: 5, correction: "Alugam-se casas no centro.", explanation: "" },
+          { id: 6, correction: "A maioria das pessoas foi (ou foram) à festa.", explanation: "" },
+          { id: 7, correction: "Esqueceu-se da chave?", explanation: "" },
+          { id: 8, correction: "Aonde você vai?", explanation: "" },
+          { id: 9, correction: "Namoro ela há anos.", explanation: "" },
+          { id: 10, correction: "Seguem anexas as cartas que implicam demissão.", explanation: "" },
+        ]
+      }
     ]
   }
 ];

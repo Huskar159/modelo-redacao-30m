@@ -8,7 +8,7 @@ export interface TrainingSheetData {
   id: string;
   topic: string;
   metaTime: string; // e.g., "30 Minutos"
-  theme?: 'teal' | 'indigo' | 'rose'; // 'teal' (Vol 1), 'indigo' (Vol 1 pt 2), 'rose' (Vol 1 Final)
+  theme?: 'teal' | 'indigo' | 'rose' | 'amber'; // Added 'amber' for Regência
   sectionInfo?: {
     title: string;
     subtitle: string;
@@ -42,6 +42,6 @@ export interface SolutionSheet {
 
 export interface SolutionSection {
   title: string;
-  theme: 'teal' | 'indigo' | 'rose';
+  theme: 'teal' | 'indigo' | 'rose' | 'amber';
   sheets: SolutionSheet[];
 }

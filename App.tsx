@@ -8,6 +8,7 @@ import { FixationBlock } from './components/FixationBlock';
 import { DesignOverlay } from './components/DesignOverlay';
 import { SolutionBooklet } from './components/SolutionBooklet';
 import { SHEETS } from './constants';
+import { MODEL_SHEETS } from './modelConstants';
 import { TrainingSheetData } from './types';
 
 const App: React.FC = () => {
@@ -100,7 +101,7 @@ const App: React.FC = () => {
             }`}
           >
             <FileText size={20} />
-            <span className="hidden md:inline">Ficha 1 de treino modelo</span>
+            <span className="hidden md:inline">Mês 2</span>
           </button>
 
           <button 
@@ -152,7 +153,7 @@ const App: React.FC = () => {
       
       {mode === 'worksheets' && SHEETS.map(renderSheet)}
       
-      {mode === 'model' && renderSheet(SHEETS[0])}
+      {mode === 'model' && MODEL_SHEETS.map(renderSheet)}
 
     </div>
   );

@@ -4,12 +4,17 @@ import { BrainCircuit } from 'lucide-react';
 interface Props {
   topic: string; 
   description?: string;
-  theme?: 'teal' | 'indigo' | 'rose';
+  theme?: 'teal' | 'indigo' | 'rose' | 'amber';
 }
 
 export const FixationBlock: React.FC<Props> = ({ topic, description, theme = 'teal' }) => {
   const getThemeStyles = () => {
     switch (theme) {
+      case 'amber':
+        return {
+          iconColor: 'text-amber-700',
+          focusBorder: 'focus:border-amber-400'
+        };
       case 'rose':
         return {
           iconColor: 'text-rose-700',

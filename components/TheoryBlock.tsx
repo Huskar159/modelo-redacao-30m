@@ -4,12 +4,21 @@ import { LockOpen } from 'lucide-react';
 interface Props {
   title: string;
   content: string;
-  theme?: 'teal' | 'indigo' | 'rose';
+  theme?: 'teal' | 'indigo' | 'rose' | 'amber';
 }
 
 export const TheoryBlock: React.FC<Props> = ({ title, content, theme = 'teal' }) => {
   const getThemeStyles = () => {
     switch (theme) {
+      case 'amber':
+        return {
+          bg: 'bg-amber-50',
+          border: 'border-amber-100',
+          iconWrapperBg: 'bg-amber-100',
+          icon: 'text-amber-600',
+          title: 'text-amber-900',
+          decor: 'text-amber-200'
+        };
       case 'rose':
         return {
           bg: 'bg-rose-50',

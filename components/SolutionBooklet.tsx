@@ -1,25 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BookMarked, CheckCircle2 } from 'lucide-react';
-import { SOLUTIONS } from '../solutionConstants';
+import { SOLUTIONS_VOL_1, SOLUTIONS_VOL_2 } from '../solutionConstants';
 import { SolutionSection } from '../types';
 
 export const SolutionBooklet: React.FC = () => {
+  const [activeVolume, setActiveVolume] = useState<1 | 2>(1);
+
+  const currentSolutions = activeVolume === 1 ? SOLUTIONS_VOL_1 : SOLUTIONS_VOL_2;
+  const volumeTitle = activeVolume === 1 ? "VOLUME 1" : "VOLUME 2";
+  const volumeSubtitle = activeVolume === 1 
+    ? "Mês 1: Domínio da Pontuação e Crase" 
+    : "Mês 2: Concordância e Regência";
+
   return (
     <div className="a4-multipage flex flex-col font-sans">
       
       {/* Title Page / Header */}
       <header className="border-b-4 border-gray-900 pb-4 mb-6 text-center shrink-0">
-        <div className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-2 rounded-full mb-3 print:bg-gray-900 print:text-white">
+        <div className="flex flex-col items-center gap-4 no-print">
+            <div className="flex gap-2 mb-2 p-1 bg-gray-100 rounded-lg">
+                <button 
+                    onClick={() => setActiveVolume(1)}
+                    className={`px-4 py-2 rounded-md text-sm font-bold transition-all ${
+                        activeVolume === 1 
+                        ? 'bg-white shadow text-gray-900' 
+                        : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                >
+                    Volume 1
+                </button>
+                <button 
+                    onClick={() => setActiveVolume(2)}
+                    className={`px-4 py-2 rounded-md text-sm font-bold transition-all ${
+                        activeVolume === 2 
+                        ? 'bg-white shadow text-gray-900' 
+                        : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                >
+                    Volume 2
+                </button>
+            </div>
+        </div>
+
+        <div className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-2 rounded-full mb-3 print:bg-gray-900 print:text-white mt-2">
           <BookMarked size={20} />
           <span className="font-bold tracking-widest uppercase text-sm">Gabarito Comentado</span>
         </div>
-        <h1 className="text-3xl font-black text-gray-900 mb-1 tracking-tight">VOLUME 1</h1>
-        <p className="text-lg text-gray-600 font-medium">Mês 1: Domínio da Pontuação e Crase</p>
+        <h1 className="text-3xl font-black text-gray-900 mb-1 tracking-tight">{volumeTitle}</h1>
+        <p className="text-lg text-gray-600 font-medium">{volumeSubtitle}</p>
       </header>
 
       {/* Sections Loop */}
       <div className="flex-1 space-y-8 print:space-y-6">
-        {SOLUTIONS.map((section: SolutionSection, sIndex) => {
+        {currentSolutions.map((section: SolutionSection, sIndex) => {
           // Color logic
           let themeColor = 'text-teal-700';
           let borderColor = 'border-teal-200';
@@ -36,6 +69,11 @@ export const SolutionBooklet: React.FC = () => {
             borderColor = 'border-rose-200';
             bgColor = 'bg-rose-50';
             numberBg = 'bg-rose-600';
+          } else if (section.theme === 'amber') {
+            themeColor = 'text-amber-700';
+            borderColor = 'border-amber-200';
+            bgColor = 'bg-amber-50';
+            numberBg = 'bg-amber-600';
           }
 
           return (

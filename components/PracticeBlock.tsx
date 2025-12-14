@@ -4,7 +4,7 @@ import { ExerciseItem } from '../types';
 
 interface Props {
   exercises: ExerciseItem[];
-  theme?: 'teal' | 'indigo' | 'rose';
+  theme?: 'teal' | 'indigo' | 'rose' | 'amber';
 }
 
 export const PracticeBlock: React.FC<Props> = ({ exercises, theme = 'teal' }) => {
@@ -18,6 +18,15 @@ export const PracticeBlock: React.FC<Props> = ({ exercises, theme = 'teal' }) =>
 
   const getThemeStyles = () => {
     switch (theme) {
+      case 'amber':
+        return {
+          iconBg: 'bg-amber-50',
+          iconColor: 'text-amber-700',
+          checkActive: 'bg-amber-600 border-amber-600',
+          checkHover: 'hover:border-amber-400',
+          focusBorder: 'focus:border-amber-600',
+          inputText: 'text-amber-900'
+        };
       case 'rose':
         return {
           iconBg: 'bg-rose-50',

@@ -5,7 +5,7 @@ interface Props {
   sheetId: string;
   topic: string;
   timeEstimate: string;
-  theme?: 'teal' | 'indigo' | 'rose';
+  theme?: 'teal' | 'indigo' | 'rose' | 'amber';
   sectionInfo?: {
     title: string;
     subtitle: string;
@@ -15,6 +15,13 @@ interface Props {
 export const WorksheetHeader: React.FC<Props> = ({ sheetId, topic, timeEstimate, theme = 'teal', sectionInfo }) => {
   const getThemeStyles = () => {
     switch (theme) {
+      case 'amber':
+        return {
+          iconBg: 'bg-amber-600',
+          brandColor: 'text-amber-800',
+          iconColor: 'text-amber-700',
+          sectionTitle: 'text-amber-700'
+        };
       case 'rose':
         return {
           iconBg: 'bg-rose-700',
