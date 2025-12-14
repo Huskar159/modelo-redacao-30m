@@ -73,7 +73,7 @@
       /* Print adjustments */
       @media print {
         @page {
-          margin: 0;
+          margin: 10mm; /* Small margin on the physical paper to avoid printer cropping */
           size: A4 portrait;
         }
         
@@ -84,7 +84,8 @@
           color-adjust: exact !important;
         }
 
-        body {
+        html, body {
+          height: auto;
           background-color: white;
           margin: 0;
           padding: 0;
@@ -99,29 +100,35 @@
           border: none !important;
         }
 
-        /* Enforce Exact A4 Layout for Single Sheets */
+        /* Enforce Exact A4 Layout for Single Sheets (Exercises) */
         .a4-container {
           margin: 0 !important;
-          width: 210mm !important;
-          height: 297mm !important; /* Force exact height */
-          padding: 15mm !important; /* Fixed padding for print */
-          overflow: hidden !important; /* Prevent spillover */
+          width: 100% !important;
+          height: 290mm !important; /* Slightly less than 297 to prevent overflow blank pages */
           page-break-after: always;
           border-radius: 0 !important;
+          padding: 10mm !important; /* Adjusted padding for print */
           position: relative;
+          overflow: hidden !important;
         }
 
-        /* Enforce Flow Layout for Multipage Documents */
+        /* Enforce Flow Layout for Multipage Documents (Solutions) */
         .a4-multipage {
-          width: 210mm !important;
+          width: 100% !important;
           max-width: none !important;
           min-height: 0 !important;
           height: auto !important;
           overflow: visible !important;
           margin: 0 !important;
-          padding: 15mm !important;
+          padding: 0 !important; /* Let body margin handle edge */
           box-shadow: none !important;
           display: block !important;
+        }
+        
+        /* Utilities for page breaking */
+        .break-inside-avoid {
+          break-inside: avoid !important;
+          page-break-inside: avoid !important;
         }
 
         /* Ensure textareas print clearly */

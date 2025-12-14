@@ -5,20 +5,20 @@ import { SolutionSection } from '../types';
 
 export const SolutionBooklet: React.FC = () => {
   return (
-    <div className="a4-multipage flex flex-col">
+    <div className="a4-multipage flex flex-col font-sans">
       
       {/* Title Page / Header */}
-      <header className="border-b-4 border-gray-900 pb-6 mb-8 text-center shrink-0">
-        <div className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-2 rounded-full mb-4 print:bg-gray-900 print:text-white">
-          <BookMarked size={24} />
-          <span className="font-bold tracking-widest uppercase">Gabarito Comentado</span>
+      <header className="border-b-4 border-gray-900 pb-4 mb-6 text-center shrink-0">
+        <div className="inline-flex items-center gap-3 bg-gray-900 text-white px-6 py-2 rounded-full mb-3 print:bg-gray-900 print:text-white">
+          <BookMarked size={20} />
+          <span className="font-bold tracking-widest uppercase text-sm">Gabarito Comentado</span>
         </div>
-        <h1 className="text-4xl font-black text-gray-900 mb-2 tracking-tight">VOLUME 1</h1>
-        <p className="text-xl text-gray-600 font-medium">Mês 1: Domínio da Pontuação e Crase</p>
+        <h1 className="text-3xl font-black text-gray-900 mb-1 tracking-tight">VOLUME 1</h1>
+        <p className="text-lg text-gray-600 font-medium">Mês 1: Domínio da Pontuação e Crase</p>
       </header>
 
       {/* Sections Loop */}
-      <div className="flex-1 space-y-10">
+      <div className="flex-1 space-y-8 print:space-y-6">
         {SOLUTIONS.map((section: SolutionSection, sIndex) => {
           // Color logic
           let themeColor = 'text-teal-700';
@@ -39,30 +39,32 @@ export const SolutionBooklet: React.FC = () => {
           }
 
           return (
-            <section key={sIndex} className="break-inside-avoid-page">
-              <h2 className={`text-2xl font-bold ${themeColor} border-b-2 ${borderColor} pb-2 mb-6 flex items-center gap-2 print:text-xl`}>
+            /* REMOVED break-inside-avoid-page from section to allow it to flow across pages */
+            <section key={sIndex} className="mb-4">
+              <h2 className={`text-xl font-bold ${themeColor} border-b-2 ${borderColor} pb-1 mb-4 flex items-center gap-2 print:text-lg print:mb-3`}>
                 {section.title}
               </h2>
 
-              <div className="grid grid-cols-1 gap-6">
+              <div className="grid grid-cols-1 gap-4 print:gap-3">
                 {section.sheets.map((sheet, shIndex) => (
-                  <div key={shIndex} className={`rounded-xl border ${borderColor} ${bgColor} p-4 print:p-3 break-inside-avoid shadow-sm print:shadow-none`}>
+                  /* KEEP break-inside-avoid on the sheet to prevent splitting a single exercise box */
+                  <div key={shIndex} className={`rounded-lg border ${borderColor} ${bgColor} p-3 print:p-2.5 break-inside-avoid shadow-sm print:shadow-none print:border`}>
                     
                     {/* Sheet Header */}
-                    <div className="flex items-center gap-2 mb-3 pb-2 border-b border-black/5">
-                       <span className={`text-xs font-bold text-white px-2 py-0.5 rounded ${numberBg} print-color-adjust`}>{sheet.id}</span>
-                       <h3 className="font-bold text-gray-900 text-base leading-tight">{sheet.topic}</h3>
+                    <div className="flex items-center gap-2 mb-2 pb-1 border-b border-black/5">
+                       <span className={`text-[10px] font-bold text-white px-1.5 py-0.5 rounded ${numberBg} print-color-adjust`}>{sheet.id}</span>
+                       <h3 className="font-bold text-gray-900 text-sm leading-tight">{sheet.topic}</h3>
                     </div>
 
                     {/* Sheet Items */}
-                    <div className="grid grid-cols-1 gap-y-1.5">
+                    <div className="grid grid-cols-1 gap-y-1">
                       {sheet.items.map((item, iIndex) => (
-                        <div key={iIndex} className="flex gap-2 text-[13px] leading-snug">
+                        <div key={iIndex} className="flex gap-2 text-[11px] leading-snug">
                            <span className="font-bold text-gray-400 w-4 shrink-0 text-right">{item.id}.</span>
                            <div className="flex-1">
                              <span className="font-bold text-gray-900">{item.correction}</span>
                              {item.explanation && (
-                               <span className="text-gray-600 italic ml-1 print:text-gray-700 block sm:inline">— {item.explanation}</span>
+                               <span className="text-gray-600 italic ml-1 print:text-gray-700 block sm:inline font-medium">— {item.explanation}</span>
                              )}
                            </div>
                            <CheckCircle2 size={12} className="text-green-600 shrink-0 mt-0.5 opacity-50 hidden sm:block print:hidden" />
@@ -78,7 +80,7 @@ export const SolutionBooklet: React.FC = () => {
       </div>
 
       {/* Footer */}
-      <div className="mt-auto pt-8 border-t border-gray-200 text-center text-gray-400 text-xs font-medium uppercase tracking-wider print:mt-8">
+      <div className="mt-8 pt-4 border-t border-gray-200 text-center text-gray-400 text-[10px] font-medium uppercase tracking-wider print:mt-4">
         Redação 30M — Material Exclusivo para Alunos
       </div>
     </div>
