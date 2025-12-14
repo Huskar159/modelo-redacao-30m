@@ -33,7 +33,7 @@ const ScribbleCircle = ({ className, width = "100%", height = "100%" }: { classN
 
 export const DesignOverlay: React.FC = () => {
   return (
-    <div className="absolute inset-0 pointer-events-none z-50 overflow-hidden font-handwriting select-none">
+    <div className="absolute inset-0 pointer-events-none z-50 overflow-hidden font-handwriting select-none print:hidden">
       
       {/* 1. BLOCK 1: O Desbloqueio (Teoria) - MOVED TO RIGHT */}
       <div className="absolute top-[13%] right-[2%] md:right-[1%] z-10 w-[260px] md:w-[280px]">
