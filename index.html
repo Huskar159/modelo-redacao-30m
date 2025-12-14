@@ -59,6 +59,17 @@
         line-height: 2rem;
       }
 
+      /* Base A4 Multipage - For Scrollable Content like Solutions */
+      .a4-multipage {
+        width: 100%;
+        max-width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: white;
+        padding: 15mm;
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      }
+
       /* Print adjustments */
       @media print {
         @page {
@@ -88,7 +99,7 @@
           border: none !important;
         }
 
-        /* Enforce Exact A4 Layout */
+        /* Enforce Exact A4 Layout for Single Sheets */
         .a4-container {
           margin: 0 !important;
           width: 210mm !important;
@@ -98,6 +109,19 @@
           page-break-after: always;
           border-radius: 0 !important;
           position: relative;
+        }
+
+        /* Enforce Flow Layout for Multipage Documents */
+        .a4-multipage {
+          width: 210mm !important;
+          max-width: none !important;
+          min-height: 0 !important;
+          height: auto !important;
+          overflow: visible !important;
+          margin: 0 !important;
+          padding: 15mm !important;
+          box-shadow: none !important;
+          display: block !important;
         }
 
         /* Ensure textareas print clearly */
