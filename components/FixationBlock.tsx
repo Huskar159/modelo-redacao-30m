@@ -2,10 +2,11 @@ import React from 'react';
 import { BrainCircuit } from 'lucide-react';
 
 interface Props {
-  topic: string;
+  topic: string; // Kept for backwards compatibility if needed, though we primarily use description now
+  description?: string;
 }
 
-export const FixationBlock: React.FC<Props> = ({ topic }) => {
+export const FixationBlock: React.FC<Props> = ({ topic, description }) => {
   return (
     <section className="h-[18%] mt-auto border-2 border-gray-100 rounded-xl p-4 bg-gray-50/30 flex flex-col">
       <div className="flex items-center gap-2 mb-3 text-gray-800">
@@ -16,8 +17,12 @@ export const FixationBlock: React.FC<Props> = ({ topic }) => {
         </span>
       </div>
 
-      <p className="text-sm text-gray-600 mb-2">
-        Escreva um parágrafo de 3 a 4 linhas sobre o tema <span className="font-bold text-gray-900 bg-gray-200 px-1 rounded mx-1">{topic}</span> aplicando obrigatoriamente a regra de hoje.
+      <p className="text-sm text-gray-600 mb-2 leading-relaxed">
+        {description || (
+          <>
+            Escreva um parágrafo de 3 a 4 linhas sobre o tema <span className="font-bold text-gray-900 bg-gray-200 px-1 rounded mx-1">{topic}</span> aplicando obrigatoriamente a regra de hoje.
+          </>
+        )}
       </p>
 
       {/* Lined Paper Effect Area */}

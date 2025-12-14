@@ -18,6 +18,6 @@ export interface TrainingSheetData {
   };
   exercises: ExerciseItem[];
   fixation: {
-    topic: string;
+    description: string;
   };
 }
