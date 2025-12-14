@@ -4,9 +4,10 @@ import { ExerciseItem } from '../types';
 
 interface Props {
   exercises: ExerciseItem[];
+  theme?: 'teal' | 'indigo' | 'rose';
 }
 
-export const PracticeBlock: React.FC<Props> = ({ exercises }) => {
+export const PracticeBlock: React.FC<Props> = ({ exercises, theme = 'teal' }) => {
   const [completed, setCompleted] = useState<number[]>([]);
 
   const toggleComplete = (id: number) => {
@@ -15,10 +16,45 @@ export const PracticeBlock: React.FC<Props> = ({ exercises }) => {
     );
   };
 
+  const getThemeStyles = () => {
+    switch (theme) {
+      case 'rose':
+        return {
+          iconBg: 'bg-rose-50',
+          iconColor: 'text-rose-700',
+          checkActive: 'bg-rose-600 border-rose-600',
+          checkHover: 'hover:border-rose-400',
+          focusBorder: 'focus:border-rose-600',
+          inputText: 'text-rose-800'
+        };
+      case 'indigo':
+        return {
+          iconBg: 'bg-indigo-50',
+          iconColor: 'text-indigo-700',
+          checkActive: 'bg-indigo-600 border-indigo-600',
+          checkHover: 'hover:border-indigo-400',
+          focusBorder: 'focus:border-indigo-600',
+          inputText: 'text-indigo-800'
+        };
+      case 'teal':
+      default:
+        return {
+          iconBg: 'bg-primary-50',
+          iconColor: 'text-primary-700',
+          checkActive: 'bg-primary-600 border-primary-600',
+          checkHover: 'hover:border-primary-400',
+          focusBorder: 'focus:border-primary-600',
+          inputText: 'text-primary-800'
+        };
+    }
+  };
+
+  const styles = getThemeStyles();
+
   return (
     <section className="mb-4 flex-1 flex flex-col min-h-0">
       <div className="flex items-center gap-2 mb-3 shrink-0">
-        <div className="bg-primary-50 p-1.5 rounded text-primary-700">
+        <div className={`${styles.iconBg} p-1.5 rounded ${styles.iconColor}`}>
             <PencilLine size={18} />
         </div>
         <h3 className="font-bold text-gray-800">Prática Ativa: Identifique e corrija os erros</h3>
@@ -35,8 +71,8 @@ export const PracticeBlock: React.FC<Props> = ({ exercises }) => {
                   onClick={() => toggleComplete(exercise.id)}
                   className={`mt-1 w-5 h-5 shrink-0 rounded border transition-colors flex items-center justify-center ${
                     isDone 
-                      ? 'bg-primary-600 border-primary-600 text-white' 
-                      : 'border-gray-300 text-transparent hover:border-primary-400'
+                      ? `${styles.checkActive} text-white` 
+                      : `border-gray-300 text-transparent ${styles.checkHover}`
                   }`}
                   aria-label={`Mark question ${exercise.id} as done`}
                 >
@@ -56,7 +92,7 @@ export const PracticeBlock: React.FC<Props> = ({ exercises }) => {
                   <div className="relative">
                     <input 
                       type="text" 
-                      className="w-full bg-transparent border-b-2 border-dotted border-gray-300 focus:border-primary-600 outline-none text-sm py-1 text-primary-800 placeholder-gray-400 transition-colors font-mono"
+                      className={`w-full bg-transparent border-b-2 border-dotted border-gray-300 ${styles.focusBorder} outline-none text-sm py-1 ${styles.inputText} placeholder-gray-400 transition-colors font-mono`}
                       placeholder={exercise.placeholder}
                       disabled={isDone}
                     />
