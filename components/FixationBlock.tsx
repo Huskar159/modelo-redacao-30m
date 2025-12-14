@@ -8,7 +8,7 @@ interface Props {
 
 export const FixationBlock: React.FC<Props> = ({ topic, description }) => {
   return (
-    <section className="h-[20%] mt-auto border-2 border-gray-100 rounded-xl p-4 bg-gray-50/30 flex flex-col">
+    <section className="h-[23%] mt-auto border-2 border-gray-100 rounded-xl p-3 bg-gray-50/30 flex flex-col">
       <div className="flex items-center gap-2 mb-2 text-gray-800 shrink-0">
         <BrainCircuit size={20} className="text-primary-700" />
         <h3 className="font-bold text-sm uppercase tracking-wide">A Fixação</h3>
@@ -25,9 +25,9 @@ export const FixationBlock: React.FC<Props> = ({ topic, description }) => {
         )}
       </p>
 
-      {/* Lined Paper Effect Area - Forced height to ensure at least 4 lines are visible */}
+      {/* Lined Paper Effect Area - Reduced to 3 lines (6rem) to prevent overflow in print, while increasing container height */}
       <textarea 
-        className="w-full flex-1 resize-none bg-white border border-gray-200 rounded-md lined-paper px-3 text-gray-800 text-sm outline-none focus:border-primary-400 transition-colors min-h-[8rem]"
+        className="w-full flex-1 resize-none bg-white border border-gray-200 rounded-md lined-paper px-3 text-gray-800 text-sm outline-none focus:border-primary-400 transition-colors min-h-[6rem]"
         placeholder="Comece a escrever aqui..."
         spellCheck={false}
       ></textarea>

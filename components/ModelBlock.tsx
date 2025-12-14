@@ -8,7 +8,7 @@ interface Props {
 
 export const ModelBlock: React.FC<Props> = ({ errorExample, correctionExample }) => {
   return (
-    <section className="mb-4 h-[10%]">
+    <section className="mb-4 h-[9%]">
       <div className="flex items-center gap-2 mb-1">
         <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">👁️ O Modelo</span>
         <div className="h-px bg-gray-200 flex-1"></div>
