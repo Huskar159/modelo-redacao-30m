@@ -90,7 +90,7 @@ const App: React.FC = () => {
             }`}
           >
             <Layers size={20} />
-            <span className="hidden md:inline">Treino Completo</span>
+            <span className="hidden md:inline">Mês 1</span>
           </button>
 
           <button 

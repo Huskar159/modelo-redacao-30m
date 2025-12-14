@@ -7,6 +7,10 @@ export const SHEETS: TrainingSheetData[] = [
     topic: "A Regra de Ouro (Sujeito e Verbo)",
     metaTime: "30 Minutos",
     theme: 'teal',
+    sectionInfo: {
+      title: "Foco em Vírgula",
+      subtitle: "Regras básicas, proibitivas e deslocamentos"
+    },
     theory: {
       title: "O Desbloqueio",
       content: "Nunca coloque um 'muro' entre quem faz a ação e a ação em si. A vírgula é proibida entre o Sujeito (quem faz) e o Verbo (a ação), mesmo que a frase seja longa.",
