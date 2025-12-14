@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redação 30M - Ficha de Treino</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              handwriting: ['Kalam', 'cursive'],
+            },
+            colors: {
+              primary: {
+                50: '#f0fdfa',
+                100: '#ccfbf1',
+                600: '#0d9488', // Teal-600
+                700: '#0f766e', // Teal-700
+                800: '#115e59', // Teal-800
+                900: '#134e4a',
+              },
+              marker: '#db2777', // Pink-600 for annotations
+            },
+            screens: {
+              print: { raw: 'print' },
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      /* Lined Paper Effect for Textarea */
+      .lined-paper {
+        background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+        background-size: 100% 2rem; /* Matches line-height */
+        background-attachment: local;
+        line-height: 2rem;
+      }
+
+      /* Print adjustments */
+      @media print {
+        @page {
+          margin: 0;
+          size: A4 portrait;
+        }
+        
+        /* Force background graphics and colors */
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          color-adjust: exact !important;
+        }
+
+        body {
+          background-color: white;
+          margin: 0;
+          padding: 0;
+        }
+
+        .no-print {
+          display: none !important;
+        }
+
+        .print-shadow-none {
+          box-shadow: none !important;
+          border: none !important;
+        }
+
+        /* Enforce Exact A4 Layout */
+        .a4-container {
+          margin: 0 !important;
+          width: 210mm !important;
+          height: 297mm !important; /* Force exact height */
+          padding: 15mm !important; /* Fixed padding for print */
+          overflow: hidden !important; /* Prevent spillover */
+          page-break-after: always;
+          border-radius: 0 !important;
+          position: relative;
+        }
+
+        /* Ensure textareas print clearly */
+        textarea {
+          resize: none;
+          border: 1px solid #e5e7eb !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 text-gray-800 antialiased selection:bg-teal-100 selection:text-teal-900">
+    <div id="root"></div>
+  </body>
+</html>
