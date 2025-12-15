@@ -995,3 +995,768 @@ export const SOLUTIONS_VOL_2: SolutionSection[] = [
     ]
   }
 ];
+
+export const SOLUTIONS_VOL_3: SolutionSection[] = [
+  {
+    title: "Fichas 61 a 75: Operadores Argumentativos",
+    theme: 'amber',
+    sheets: [
+      { id: "#61", topic: "O Início do D1 (Ligando com a Introdução)", items: [{ id: 1, correction: "Diante desse cenário...", explanation: "" }, { id: 2, correction: "Nesse contexto...", explanation: "" }, { id: 3, correction: "Sob essa ótica...", explanation: "" }, { id: 4, correction: "A princípio...", explanation: "" }, { id: 5, correction: "Diante disso...", explanation: "" }, { id: 6, correction: "Nesse cenário...", explanation: "" }, { id: 7, correction: "Sob esse viés...", explanation: "" }, { id: 8, correction: "Nesse sentido...", explanation: "" }, { id: 9, correction: "Em primeira análise...", explanation: "" }, { id: 10, correction: "A priori...", explanation: "" }] },
+      { id: "#62", topic: "O Início do D2 (Soma ou Contraste?)", items: [{ id: 1, correction: "Ademais (Soma)", explanation: "" }, { id: 2, correction: "Além disso (Soma)", explanation: "" }, { id: 3, correction: "Outrossim (Soma)", explanation: "" }, { id: 4, correction: "Vale ressaltar também (Soma)", explanation: "" }, { id: 5, correction: "Em segundo lugar (Soma)", explanation: "" }, { id: 6, correction: "Paralelamente (Soma)", explanation: "" }, { id: 7, correction: "Somado a isso (Soma)", explanation: "" }, { id: 8, correction: "Portanto (Não)", explanation: "" }, { id: 9, correction: "A princípio (Não)", explanation: "" }, { id: 10, correction: "Em suma (Não)", explanation: "" }] },
+      { id: "#63", topic: "O Início da Conclusão", items: [{ id: 1, correction: "Portanto...", explanation: "" }, { id: 2, correction: "Dessa forma...", explanation: "" }, { id: 3, correction: "Diante do exposto...", explanation: "" }, { id: 4, correction: "Logo...", explanation: "" }, { id: 5, correction: "Assim...", explanation: "" }, { id: 6, correction: "Por conseguinte...", explanation: "" }, { id: 7, correction: "Desse modo...", explanation: "" }, { id: 8, correction: "Infere-se, portanto...", explanation: "" }, { id: 9, correction: "Fica claro, pois...", explanation: "" }, { id: 10, correction: "Torna-se evidente, assim...", explanation: "" }] },
+      { id: "#64", topic: "Intraparágrafo - Adição", items: [{ id: 1, correction: "bem como...", explanation: "" }, { id: 2, correction: "não só... mas também...", explanation: "" }, { id: 3, correction: "assim como...", explanation: "" }, { id: 4, correction: "somado à...", explanation: "" }, { id: 5, correction: "além de...", explanation: "" }, { id: 6, correction: "bem como...", explanation: "" }, { id: 7, correction: "aliado ao...", explanation: "" }, { id: 8, correction: "mas também...", explanation: "" }, { id: 9, correction: "assim como...", explanation: "" }, { id: 10, correction: "e também...", explanation: "" }] },
+      { id: "#65", topic: "Intraparágrafo - Oposição", items: [{ id: 1, correction: "contudo...", explanation: "" }, { id: 2, correction: "todavia...", explanation: "" }, { id: 3, correction: "no entanto...", explanation: "" }, { id: 4, correction: "entretanto...", explanation: "" }, { id: 5, correction: "porém...", explanation: "" }, { id: 6, correction: "contudo...", explanation: "" }, { id: 7, correction: "todavia...", explanation: "" }, { id: 8, correction: "no entanto...", explanation: "" }, { id: 9, correction: "entretanto...", explanation: "" }, { id: 10, correction: "porém...", explanation: "" }] },
+      { id: "#66", topic: "Intraparágrafo - Causa e Consequência", items: [{ id: 1, correction: "dessa forma...", explanation: "" }, { id: 2, correction: "por conseguinte...", explanation: "" }, { id: 3, correction: "em virtude disso...", explanation: "" }, { id: 4, correction: "consequentemente...", explanation: "" }, { id: 5, correction: "logo...", explanation: "" }, { id: 6, correction: "assim...", explanation: "" }, { id: 7, correction: "por isso...", explanation: "" }, { id: 8, correction: "devido a isso...", explanation: "" }, { id: 9, correction: "portanto...", explanation: "" }, { id: 10, correction: "em decorrência disso...", explanation: "" }] },
+      { id: "#67", topic: "Intraparágrafo - Explicação", items: [{ id: 1, correction: "uma vez que...", explanation: "" }, { id: 2, correction: "haja vista...", explanation: "" }, { id: 3, correction: "já que...", explanation: "" }, { id: 4, correction: "visto que...", explanation: "" }, { id: 5, correction: "dado que...", explanation: "" }, { id: 6, correction: "pois...", explanation: "" }, { id: 7, correction: "porquanto...", explanation: "" }, { id: 8, correction: "uma vez que...", explanation: "" }, { id: 9, correction: "visto que...", explanation: "" }, { id: 10, correction: "já que...", explanation: "" }] },
+      { id: "#68", topic: "O \"Pois\" Deslocado", items: [{ id: 1, correction: "deve, pois, ...", explanation: "" }, { id: 2, correction: "precisa, pois, ...", explanation: "" }, { id: 3, correction: "deve, pois, ...", explanation: "" }, { id: 4, correction: "pode, pois, ...", explanation: "" }, { id: 5, correction: "são, pois, ...", explanation: "" }, { id: 6, correction: "é, pois, ...", explanation: "" }, { id: 7, correction: "tem, pois, ...", explanation: "" }, { id: 8, correction: "será, pois, ...", explanation: "" }, { id: 9, correction: "é, pois, ...", explanation: "" }, { id: 10, correction: "Devemos, pois, ...", explanation: "" }] },
+      { id: "#69", topic: "Exemplificação", items: [{ id: 1, correction: "A exemplo de...", explanation: "" }, { id: 2, correction: "Nesse sentido...", explanation: "" }, { id: 3, correction: "Como prova disso...", explanation: "" }, { id: 4, correction: "Sob esse viés...", explanation: "" }, { id: 5, correction: "Nesse contexto...", explanation: "" }, { id: 6, correction: "A exemplo de...", explanation: "" }, { id: 7, correction: "Nesse prisma...", explanation: "" }, { id: 8, correction: "Como exemplo...", explanation: "" }, { id: 9, correction: "Nesse cenário...", explanation: "" }, { id: 10, correction: "Sob essa ótica...", explanation: "" }] },
+      { id: "#70", topic: "O \"Onde\" (A Armadilha)", items: [{ id: 1, correction: "A casa onde moro.", explanation: "(Lugar físico)" }, { id: 2, correction: "A situação em que me encontro.", explanation: "" }, { id: 3, correction: "O ano em que nasci.", explanation: "" }, { id: 4, correction: "O país onde vivo.", explanation: "(Lugar físico)" }, { id: 5, correction: "A internet em que...", explanation: "" }, { id: 6, correction: "O relacionamento no qual...", explanation: "" }, { id: 7, correction: "A cidade onde cresci.", explanation: "(Lugar físico)" }, { id: 8, correction: "A tese que defendo.", explanation: "" }, { id: 9, correction: "O texto que li.", explanation: "" }, { id: 10, correction: "O mundo onde vivemos.", explanation: "(Lugar físico)" }] },
+      { id: "#71", topic: "Conectivos de Tempo", items: [{ id: 1, correction: "Inicialmente... Posteriormente...", explanation: "" }, { id: 2, correction: "Primeiramente... Em seguida...", explanation: "" }, { id: 3, correction: "A princípio... Depois...", explanation: "" }, { id: 4, correction: "Inicialmente... Logo após...", explanation: "" }, { id: 5, correction: "Primeiro... Por fim...", explanation: "" }, { id: 6, correction: "Enquanto...", explanation: "" }, { id: 7, correction: "Posteriormente...", explanation: "" }, { id: 8, correction: "Primeiramente... Depois...", explanation: "" }, { id: 9, correction: "Assim que...", explanation: "" }, { id: 10, correction: "Após...", explanation: "" }] },
+      { id: "#72", topic: "Evitando a Repetição", items: [{ id: 1, correction: "Logo / Dessa forma / Assim.", explanation: "" }, { id: 2, correction: "Contudo / Porém / Entretanto.", explanation: "" }, { id: 3, correction: "Ademais / Outrossim / Somado a isso.", explanation: "" }, { id: 4, correction: "Pois / Visto que / Já que.", explanation: "" }, { id: 5, correction: "A exemplo de / Como prova disso.", explanation: "" }, { id: 6, correction: "Por conseguinte / Desse modo.", explanation: "" }, { id: 7, correction: "Conforme / De acordo com.", explanation: "" }, { id: 8, correction: "Igualmente / Bem como.", explanation: "" }, { id: 9, correction: "Hoje em dia / Hodiernamente.", explanation: "" }, { id: 10, correction: "Em virtude disso / Por isso.", explanation: "" }] },
+      { id: "#73", topic: "O \"Que\" (Queísmo)", items: [{ id: 1, correction: "A lei criada...", explanation: "" }, { id: 2, correction: "O menino corajoso...", explanation: "" }, { id: 3, correction: "O país rico...", explanation: "" }, { id: 4, correction: "As medidas necessárias...", explanation: "" }, { id: 5, correction: "O texto escrito...", explanation: "" }, { id: 6, correction: "A decisão tomada...", explanation: "" }, { id: 7, correction: "O tempo perdido...", explanation: "" }, { id: 8, correction: "As pessoas ricas...", explanation: "" }, { id: 9, correction: "O vírus mortal...", explanation: "" }, { id: 10, correction: "É importante estudarmos...", explanation: "" }] },
+      { id: "#74", topic: "Operadores de Certeza", items: [{ id: 1, correction: "De fato...", explanation: "" }, { id: 2, correction: "Indubitavelmente...", explanation: "" }, { id: 3, correction: "Certamente...", explanation: "" }, { id: 4, correction: "É evidente que...", explanation: "" }, { id: 5, correction: "Com certeza...", explanation: "" }, { id: 6, correction: "Inegavelmente...", explanation: "" }, { id: 7, correction: "Fica claro que...", explanation: "" }, { id: 8, correction: "Sem dúvida...", explanation: "" }, { id: 9, correction: "Decerto...", explanation: "" }, { id: 10, correction: "É notório que...", explanation: "" }] },
+      { id: "#75", topic: "Teste Final Mês 3", items: [{ id: 1, correction: "Entretanto / Contudo / Todavia.", explanation: "(Oposição)" }, { id: 2, correction: "Além disso / Ademais.", explanation: "(Adição)" }, { id: 3, correction: "Visto que / Pois / Uma vez que.", explanation: "(Explicação)" }, { id: 4, correction: "Portanto / Logo / Dessa forma.", explanation: "(Conclusão)" }, { id: 5, correction: "Nesse contexto.", explanation: "" }, { id: 6, correction: "Portanto, medidas são necessárias.", explanation: "" }, { id: 7, correction: "Todavia.", explanation: "" }, { id: 8, correction: "Ademais.", explanation: "" }, { id: 9, correction: "Dessa forma.", explanation: "" }, { id: 10, correction: "Visto que.", explanation: "" }] },
+    ]
+  },
+  {
+    title: "Fichas 76 a 90: Coesão Referencial",
+    theme: 'amber',
+    sheets: [
+      {
+        id: "#76",
+        topic: "O Eco",
+        items: [
+          { id: 1, correction: "Repetição: 'educação'.", explanation: "Evite repetir a palavra." },
+          { id: 2, correction: "Repetição: 'problema'.", explanation: "Use sinônimos." },
+          { id: 3, correction: "Repetição: 'crianças'.", explanation: "" },
+          { id: 4, correction: "Repetição: 'Brasil'.", explanation: "" },
+          { id: 5, correction: "Repetição: 'crime'.", explanation: "" },
+          { id: 6, correction: "Repetição: 'leitura'.", explanation: "" },
+          { id: 7, correction: "Repetição: 'SUS'.", explanation: "" },
+          { id: 8, correction: "Repetição: 'internet'.", explanation: "" },
+          { id: 9, correction: "Repetição: 'jovens'.", explanation: "" },
+          { id: 10, correction: "Repetição: 'água'.", explanation: "" },
+        ]
+      },
+      {
+        id: "#77",
+        topic: "Sinônimos",
+        items: [
+          { id: 1, correction: "O estudante / discente / aprendiz.", explanation: "" },
+          { id: 2, correction: "A urbe / metrópole / município.", explanation: "" },
+          { id: 3, correction: "O Estado / Poder Público / gestão.", explanation: "" },
+          { id: 4, correction: "O aparelho / dispositivo / telefone.", explanation: "" },
+          { id: 5, correction: "A legislação / norma / regra.", explanation: "" },
+          { id: 6, correction: "O docente / educador / mestre.", explanation: "" },
+          { id: 7, correction: "A Terra / o globo / o mundo.", explanation: "" },
+          { id: 8, correction: "A verba / o recurso / capital.", explanation: "" },
+          { id: 9, correction: "O gênero feminino / elas / as cidadãs.", explanation: "" },
+          { id: 10, correction: "A obra / o exemplar / a publicação.", explanation: "" },
+        ]
+      },
+      {
+        id: "#78",
+        topic: "Hiperônimos",
+        items: [
+          { id: 1, correction: "Essa tragédia / questão / flagelo.", explanation: "" },
+          { id: 2, correction: "Essa prática / crime / discriminação.", explanation: "" },
+          { id: 3, correction: "Essa instituição / ambiente / local.", explanation: "" },
+          { id: 4, correction: "Esse esporte / jogo / modalidade.", explanation: "" },
+          { id: 5, correction: "Essa doença / patologia / transtorno.", explanation: "" },
+          { id: 6, correction: "O político / chefe de Estado / mandatário.", explanation: "" },
+          { id: 7, correction: "Esses desastres / crimes ambientais.", explanation: "" },
+          { id: 8, correction: "A mídia / o veículo / meio de comunicação.", explanation: "" },
+          { id: 9, correction: "O veículo / automóvel / transporte.", explanation: "" },
+          { id: 10, correction: "Esse regime / sistema / modelo.", explanation: "" },
+        ]
+      },
+      {
+        id: "#79",
+        topic: "Isso vs. Isto",
+        items: [
+          { id: 1, correction: "Isso.", explanation: "(Retoma)." },
+          { id: 2, correction: "isto:", explanation: "(Anuncia)." },
+          { id: 3, correction: "isso.", explanation: "(Retoma)." },
+          { id: 4, correction: "isto:", explanation: "(Anuncia)." },
+          { id: 5, correction: "Isso.", explanation: "(Retoma)." },
+          { id: 6, correction: "isto:", explanation: "(Anuncia)." },
+          { id: 7, correction: "Isso.", explanation: "(Retoma)." },
+          { id: 8, correction: "isto:", explanation: "(Anuncia)." },
+          { id: 9, correction: "Isso.", explanation: "(Retoma)." },
+          { id: 10, correction: "disso.", explanation: "(Retoma)." },
+        ]
+      },
+      {
+        id: "#80",
+        topic: "Esse vs. Este",
+        items: [
+          { id: 1, correction: "Esse.", explanation: "(Retoma Brasil)." },
+          { id: 2, correction: "Nesta.", explanation: "(Agora)." },
+          { id: 3, correction: "Essa.", explanation: "(Retoma violência)." },
+          { id: 4, correction: "Neste.", explanation: "(Ano presente)." },
+          { id: 5, correction: "Esse.", explanation: "(Retoma Kant)." },
+          { id: 6, correction: "Neste.", explanation: "(Agora)." },
+          { id: 7, correction: "Esse.", explanation: "(Retoma água)." },
+          { id: 8, correction: "Esta.", explanation: "(Na mão)." },
+          { id: 9, correction: "Essa.", explanation: "(Retoma empatia)." },
+          { id: 10, correction: "Dessa.", explanation: "(Retoma argumento)." },
+        ]
+      },
+      {
+        id: "#81",
+        topic: "Ele e Ela",
+        items: [
+          { id: 1, correction: "Ela.", explanation: "" },
+          { id: 2, correction: "Eles.", explanation: "" },
+          { id: 3, correction: "Ela.", explanation: "" },
+          { id: 4, correction: "Ele.", explanation: "" },
+          { id: 5, correction: "Elas.", explanation: "" },
+          { id: 6, correction: "Ele.", explanation: "" },
+          { id: 7, correction: "Ela.", explanation: "" },
+          { id: 8, correction: "Eles.", explanation: "" },
+          { id: 9, correction: "Ela.", explanation: "" },
+          { id: 10, correction: "Ele.", explanation: "" },
+        ]
+      },
+      {
+        id: "#82",
+        topic: "Este e Aquele",
+        items: [
+          { id: 1, correction: "Esta.", explanation: "(Religião - último)." },
+          { id: 2, correction: "Aquela.", explanation: "(Ciência - primeiro)." },
+          { id: 3, correction: "Esta.", explanation: "(Maria)." },
+          { id: 4, correction: "Aquele.", explanation: "(João)." },
+          { id: 5, correction: "Esta.", explanation: "(Família)." },
+          { id: 6, correction: "Aquela.", explanation: "(Escola)." },
+          { id: 7, correction: "Aquele.", explanation: "(Medo)." },
+          { id: 8, correction: "Esta.", explanation: "(Coragem)." },
+          { id: 9, correction: "Estes.", explanation: "(Cães)." },
+          { id: 10, correction: "Aqueles.", explanation: "(Gatos)." },
+        ]
+      },
+      {
+        id: "#83",
+        topic: "O Mesmo",
+        items: [
+          { id: 1, correction: "...mas ela não pegou.", explanation: "" },
+          { id: 2, correction: "Ele afirma que...", explanation: "" },
+          { id: 3, correction: "Ela / A instituição...", explanation: "" },
+          { id: 4, correction: "...pois ele paga...", explanation: "" },
+          { id: 5, correction: "...e ela é eficaz.", explanation: "" },
+          { id: 6, correction: "Este deve corrigir.", explanation: "" },
+          { id: 7, correction: "Ela / A corporação...", explanation: "" },
+          { id: 8, correction: "Ele / A obra...", explanation: "" },
+          { id: 9, correction: "Ele / Tal questão...", explanation: "" },
+          { id: 10, correction: "Ela venceu.", explanation: "" },
+        ]
+      },
+      {
+        id: "#84",
+        topic: "Epítetos",
+        items: [
+          { id: 1, correction: "O astro rei.", explanation: "" },
+          { id: 2, correction: "A rede mundial de computadores.", explanation: "" },
+          { id: 3, correction: "O ouro negro.", explanation: "" },
+          { id: 4, correction: "A capital federal.", explanation: "" },
+          { id: 5, correction: "O pulmão do mundo.", explanation: "" },
+          { id: 6, correction: "A terceira idade.", explanation: "" },
+          { id: 7, correction: "Os pequenos cidadãos.", explanation: "" },
+          { id: 8, correction: "O dispositivo móvel.", explanation: "" },
+          { id: 9, correction: "A Carta Magna.", explanation: "" },
+          { id: 10, correction: "A emissora carioca.", explanation: "" },
+        ]
+      },
+      {
+        id: "#85",
+        topic: "Elipse",
+        items: [
+          { id: 1, correction: "A mãe cozinha e lava.", explanation: "" },
+          { id: 2, correction: "O aluno estuda e passa.", explanation: "" },
+          { id: 3, correction: "O Brasil é rico, mas é desigual.", explanation: "" },
+          { id: 4, correction: "Eles gritaram e correram.", explanation: "" },
+          { id: 5, correction: "A lei pune e educa.", explanation: "" },
+          { id: 6, correction: "A água limpa e hidrata.", explanation: "" },
+          { id: 7, correction: "O vírus ataca e mata.", explanation: "" },
+          { id: 8, correction: "A sociedade julga e condena.", explanation: "" },
+          { id: 9, correction: "Eu li e gostei.", explanation: "" },
+          { id: 10, correction: "Nós fomos e voltamos.", explanation: "" },
+        ]
+      },
+      {
+        id: "#86",
+        topic: "O Qual / A Qual",
+        items: [
+          { id: 1, correction: "A medida, a qual...", explanation: "" },
+          { id: 2, correction: "O problema, o qual...", explanation: "" },
+          { id: 3, correction: "As pessoas, as quais...", explanation: "" },
+          { id: 4, correction: "Os recursos, os quais...", explanation: "" },
+          { id: 5, correction: "A tese, a qual...", explanation: "" },
+          { id: 6, correction: "O caminho, o qual...", explanation: "" },
+          { id: 7, correction: "As regras, as quais...", explanation: "" },
+          { id: 8, correction: "O fato, o qual...", explanation: "" },
+          { id: 9, correction: "A carta, a qual...", explanation: "" },
+          { id: 10, correction: "Os livros, os quais...", explanation: "" },
+        ]
+      },
+      {
+        id: "#87",
+        topic: "Tal e Tais",
+        items: [
+          { id: 1, correction: "Tal situação...", explanation: "" },
+          { id: 2, correction: "Tal atitude...", explanation: "" },
+          { id: 3, correction: "Tal cenário...", explanation: "" },
+          { id: 4, correction: "Tais ações...", explanation: "" },
+          { id: 5, correction: "Tal realidade...", explanation: "" },
+          { id: 6, correction: "Tal comportamento...", explanation: "" },
+          { id: 7, correction: "Tais medidas...", explanation: "" },
+          { id: 8, correction: "Tal avanço...", explanation: "" },
+          { id: 9, correction: "Tal gesto...", explanation: "" },
+          { id: 10, correction: "Tal pensamento...", explanation: "" },
+        ]
+      },
+      {
+        id: "#88",
+        topic: "Nominalização",
+        items: [
+          { id: 1, correction: "Leitura.", explanation: "" },
+          { id: 2, correction: "Poluição.", explanation: "" },
+          { id: 3, correction: "Demissão.", explanation: "" },
+          { id: 4, correction: "Discussão.", explanation: "" },
+          { id: 5, correction: "Crescimento.", explanation: "" },
+          { id: 6, correction: "Agressão.", explanation: "" },
+          { id: 7, correction: "Participação.", explanation: "" },
+          { id: 8, correction: "Nascimento.", explanation: "" },
+          { id: 9, correction: "Julgamento.", explanation: "" },
+          { id: 10, correction: "Mudança.", explanation: "" },
+        ]
+      },
+      {
+        id: "#89",
+        topic: "Coisa e Negócio",
+        items: [
+          { id: 1, correction: "...um valor / direito / princípio.", explanation: "" },
+          { id: 2, correction: "O foco / objetivo / meta.", explanation: "" },
+          { id: 3, correction: "Há um erro / equívoco / falha.", explanation: "" },
+          { id: 4, correction: "...uma prática / mentalidade.", explanation: "" },
+          { id: 5, correction: "Esse assunto / tema / tópico.", explanation: "" },
+          { id: 6, correction: "...uma virtude / atitude.", explanation: "" },
+          { id: 7, correction: "...uma cena / situação.", explanation: "" },
+          { id: 8, correction: "...um elemento / detalhe.", explanation: "" },
+          { id: 9, correction: "O objeto / equipamento.", explanation: "" },
+          { id: 10, correction: "Isso é um ponto / aspecto.", explanation: "" },
+        ]
+      },
+      {
+        id: "#90",
+        topic: "Teste Final Mês 3",
+        items: [
+          { id: 1, correction: "Se ele não estudar...", explanation: "(Pronome)" },
+          { id: 2, correction: "...não passará.", explanation: "(Elipse)" },
+          { id: 3, correction: "...e exige leitura.", explanation: "(Elipse)" },
+          { id: 4, correction: "A leitura é um fator importante.", explanation: "(Troca de 'coisa')" },
+          { id: 5, correction: "...focar nela.", explanation: "(Retomada)" },
+          { id: 6, correction: "Proibidas / Vagas.", explanation: "" },
+          { id: 7, correction: "Este / Esta / Isto.", explanation: "" },
+          { id: 8, correction: "Aquele / Aquela / Aquilo.", explanation: "" },
+          { id: 9, correction: "O governo cobrou, mas não fez.", explanation: "(Elipse)" },
+          { id: 10, correction: "Tal / Esse cenário preocupa.", explanation: "(Retomada)" },
+        ]
+      }
+    ]
+  }
+];
+
+export const SOLUTIONS_VOL_4: SolutionSection[] = [
+  {
+    title: "Fichas 91 a 105: Voz, Pronomes e Estilo",
+    theme: 'emerald',
+    sheets: [
+      {
+        id: "#91",
+        topic: "A Clareza (Voz Ativa)",
+        items: [
+          { id: 1, correction: "O diretor resolveu o problema.", explanation: "" },
+          { id: 2, correction: "Maria escreveu a carta.", explanation: "" },
+          { id: 3, correction: "Políticos desviaram as verbas.", explanation: "" },
+          { id: 4, correction: "O professor elogiou o aluno.", explanation: "" },
+          { id: 5, correction: "O juiz tomou a decisão.", explanation: "" },
+          { id: 6, correction: "O atacante marcou o gol.", explanation: "" },
+          { id: 7, correction: "A banca analisará o projeto.", explanation: "" },
+          { id: 8, correction: "A prefeitura limpou as ruas.", explanation: "" },
+          { id: 9, correction: "Todos leram o livro.", explanation: "" },
+          { id: 10, correction: "Eu cometi o erro.", explanation: "" },
+        ]
+      },
+      {
+        id: "#92",
+        topic: "A Sofisticação (Voz Passiva Analítica)",
+        items: [
+          { id: 1, correction: "O ladrão foi preso...", explanation: "" },
+          { id: 2, correction: "A árvore foi derrubada...", explanation: "" },
+          { id: 3, correction: "A obra foi escrita...", explanation: "" },
+          { id: 4, correction: "Mudanças são exigidas...", explanation: "" },
+          { id: 5, correction: "O quarto foi iluminado...", explanation: "" },
+          { id: 6, correction: "O grito foi ouvido...", explanation: "" },
+          { id: 7, correction: "Escolas serão construídas...", explanation: "" },
+          { id: 8, correction: "O bolo foi feito...", explanation: "" },
+          { id: 9, correction: "A ferida foi curada...", explanation: "" },
+          { id: 10, correction: "O mundo foi mudado...", explanation: "" },
+        ]
+      },
+      {
+        id: "#93",
+        topic: "O Mistério (Voz Passiva Sintética)",
+        items: [
+          { id: 1, correction: "(Certo)", explanation: "" },
+          { id: 2, correction: "Alugam-se casas.", explanation: "" },
+          { id: 3, correction: "Notou-se o problema.", explanation: "" },
+          { id: 4, correction: "Tomaram-se medidas.", explanation: "" },
+          { id: 5, correction: "Dão-se aulas.", explanation: "" },
+          { id: 6, correction: "Compram-se carros.", explanation: "" },
+          { id: 7, correction: "Corrigiu-se o erro.", explanation: "" },
+          { id: 8, correction: "Renovam-se esperanças.", explanation: "" },
+          { id: 9, correction: "Fizeram-se investimentos.", explanation: "" },
+          { id: 10, correction: "Ouviu-se o silêncio.", explanation: "" },
+        ]
+      },
+      {
+        id: "#94",
+        topic: "Agente da Passiva",
+        items: [
+          { id: 1, correction: "Agente: pelo furacão...", explanation: "" },
+          { id: 2, correction: "Agente: pela avó...", explanation: "" },
+          { id: 3, correction: "Agente: pelo diretor...", explanation: "" },
+          { id: 4, correction: "Agente: por Beethoven...", explanation: "" },
+          { id: 5, correction: "Agente: pela chuva...", explanation: "" },
+          { id: 6, correction: "Agente: por Machado...", explanation: "" },
+          { id: 7, correction: "Agente: pela maioria...", explanation: "" },
+          { id: 8, correction: "Agente: por Picasso...", explanation: "" },
+          { id: 9, correction: "Agente: pelo tempo...", explanation: "" },
+          { id: 10, correction: "Agente: pelos pedreiros...", explanation: "" },
+        ]
+      },
+      {
+        id: "#95",
+        topic: "Conversão Total",
+        items: [
+          { id: 1, correction: "A janela foi quebrada...", explanation: "" },
+          { id: 2, correction: "O aluno escreveu...", explanation: "" },
+          { id: 3, correction: "O filho foi abraçado...", explanation: "" },
+          { id: 4, correction: "O Brasil venceu...", explanation: "" },
+          { id: 5, correction: "Vendem-se casas...", explanation: "" },
+          { id: 6, correction: "A roupa é seca...", explanation: "" },
+          { id: 7, correction: "Eu enviarei a carta...", explanation: "" },
+          { id: 8, correction: "O líder é respeitado...", explanation: "" },
+          { id: 9, correction: "Nós vimos o erro...", explanation: "" },
+          { id: 10, correction: "A floresta foi destruída...", explanation: "" },
+        ]
+      },
+      {
+        id: "#96",
+        topic: "Próclise I (A Regra do Ímã - Negativos)",
+        items: [
+          { id: 1, correction: "Não se engane.", explanation: "" },
+          { id: 2, correction: "Nunca o vi.", explanation: "" },
+          { id: 3, correction: "Jamais me esquecerei.", explanation: "" },
+          { id: 4, correction: "Ninguém nos ouviu.", explanation: "" },
+          { id: 5, correction: "Nada me incomoda.", explanation: "" },
+          { id: 6, correction: "Nem me importo.", explanation: "" },
+          { id: 7, correction: "Não o faça sofrer.", explanation: "" },
+          { id: 8, correction: "Nunca lhe conte...", explanation: "" },
+          { id: 9, correction: "Jamais te perdoarei.", explanation: "" },
+          { id: 10, correction: "Ninguém a viu sair.", explanation: "" },
+        ]
+      },
+      {
+        id: "#97",
+        topic: "Próclise II (Advérbios e Pronomes)",
+        items: [
+          { id: 1, correction: "Talvez o veja...", explanation: "" },
+          { id: 2, correction: "Já me disseram...", explanation: "" },
+          { id: 3, correction: "Quem te chamou?", explanation: "" },
+          { id: 4, correction: "Alguém nos viu.", explanation: "" },
+          { id: 5, correction: "Sempre me dediquei.", explanation: "" },
+          { id: 6, correction: "Ontem a encontrei.", explanation: "" },
+          { id: 7, correction: "Ele recusou-se a ir.", explanation: "" },
+          { id: 8, correction: "Todos abraçaram-se.", explanation: "" },
+          { id: 9, correction: "Poucos manifestaram-se.", explanation: "" },
+          { id: 10, correction: "Agora entendo-te.", explanation: "" },
+        ]
+      },
+      {
+        id: "#98",
+        topic: "Próclise III (O \"Que\" Atrativo)",
+        items: [
+          { id: 1, correction: "Quero que se cale.", explanation: "" },
+          { id: 2, correction: "...que se impõe.", explanation: "" },
+          { id: 3, correction: "...que se refere...", explanation: "" },
+          { id: 4, correction: "...que se amam.", explanation: "" },
+          { id: 5, correction: "...que se faça...", explanation: "" },
+          { id: 6, correction: "...que me deu.", explanation: "" },
+          { id: 7, correction: "...que nos enviaram.", explanation: "" },
+          { id: 8, correction: "...que me enganei.", explanation: "" },
+          { id: 9, correction: "...que se formou.", explanation: "" },
+          { id: 10, correction: "...que se aplica.", explanation: "" },
+        ]
+      },
+      {
+        id: "#99",
+        topic: "Ênclise I (A Proibição de Ouro)",
+        items: [
+          { id: 1, correction: "Viu-se...", explanation: "" },
+          { id: 2, correction: "Empresta-me...", explanation: "" },
+          { id: 3, correction: "Falaram-nos...", explanation: "" },
+          { id: 4, correction: "Amo-te.", explanation: "" },
+          { id: 5, correction: "Percebe-se...", explanation: "" },
+          { id: 6, correction: "Entreguei-lhe...", explanation: "" },
+          { id: 7, correction: "Disseram-me...", explanation: "" },
+          { id: 8, correction: "Faz-se...", explanation: "" },
+          { id: 9, correction: "Espera-se...", explanation: "" },
+          { id: 10, correction: "Perdi-me...", explanation: "" },
+        ]
+      },
+      {
+        id: "#100",
+        topic: "Ênclise II (A Pausa)",
+        items: [
+          { id: 1, correction: "Vê-se...", explanation: "" },
+          { id: 2, correction: "Vive-se...", explanation: "" },
+          { id: 3, correction: "Conclui-se...", explanation: "" },
+          { id: 4, correction: "Deve-se...", explanation: "" },
+          { id: 5, correction: "Disseram-nos...", explanation: "" },
+          { id: 6, correction: "Faz-se...", explanation: "" },
+          { id: 7, correction: "usava-se...", explanation: "" },
+          { id: 8, correction: "calei-me...", explanation: "" },
+          { id: 9, correction: "aprende-se...", explanation: "" },
+          { id: 10, correction: "vi-te...", explanation: "" },
+        ]
+      },
+      {
+        id: "#101",
+        topic: "Ênclise III (Gerúndio)",
+        items: [
+          { id: 1, correction: "...machucando-se.", explanation: "" },
+          { id: 2, correction: "...afetando-nos.", explanation: "" },
+          { id: 3, correction: "...olhando-me.", explanation: "" },
+          { id: 4, correction: "...despedindo-se.", explanation: "" },
+          { id: 5, correction: "...resumindo-se...", explanation: "" },
+          { id: 6, correction: "...espalhando-se.", explanation: "" },
+          { id: 7, correction: "...aquecendo-nos.", explanation: "" },
+          { id: 8, correction: "...exaltando-se.", explanation: "" },
+          { id: 9, correction: "...renovando-se.", explanation: "" },
+          { id: 10, correction: "...dirigindo-se...", explanation: "" },
+        ]
+      },
+      {
+        id: "#102",
+        topic: "Mesóclise",
+        items: [
+          { id: 1, correction: "Dir-te-ei...", explanation: "" },
+          { id: 2, correction: "(Certo) Mesóclise.", explanation: "" },
+          { id: 3, correction: "Entregar-te-ei...", explanation: "" },
+          { id: 4, correction: "(Certo)", explanation: "" },
+          { id: 5, correction: "(Certo)", explanation: "" },
+          { id: 6, correction: "(Certo)", explanation: "" },
+          { id: 7, correction: "(Certo)", explanation: "" },
+          { id: 8, correction: "(Certo)", explanation: "" },
+          { id: 9, correction: "(Certo)", explanation: "" },
+          { id: 10, correction: "(Certo)", explanation: "" },
+        ]
+      },
+      {
+        id: "#103",
+        topic: "Pronomes O, A, Lhe",
+        items: [
+          { id: 1, correction: "Eu a amo.", explanation: "" },
+          { id: 2, correction: "Eu lhe paguei.", explanation: "" },
+          { id: 3, correction: "Comprei-o.", explanation: "" },
+          { id: 4, correction: "Entreguei-lhe o livro.", explanation: "" },
+          { id: 5, correction: "Respeito-o.", explanation: "" },
+          { id: 6, correction: "Obedeço-lhes.", explanation: "" },
+          { id: 7, correction: "Convidei-a.", explanation: "" },
+          { id: 8, correction: "Disse-lhe.", explanation: "" },
+          { id: 9, correction: "Encontrei-as.", explanation: "" },
+          { id: 10, correction: "Perdoei-lhe.", explanation: "" },
+        ]
+      },
+      {
+        id: "#104",
+        topic: "Alterações Fonéticas",
+        items: [
+          { id: 1, correction: "Vou fazê-lo.", explanation: "" },
+          { id: 2, correction: "Quero comê-lo.", explanation: "" },
+          { id: 3, correction: "É preciso dizê-la.", explanation: "" },
+          { id: 4, correction: "Vamos vendê-la.", explanation: "" },
+          { id: 5, correction: "Eles compraram-no.", explanation: "" },
+          { id: 6, correction: "Puseram-na.", explanation: "" },
+          { id: 7, correction: "Quis fazê-lo.", explanation: "" },
+          { id: 8, correction: "Vou pô-lo aqui.", explanation: "" },
+          { id: 9, correction: "Cantaram-na.", explanation: "" },
+          { id: 10, correction: "Amá-la.", explanation: "" },
+        ]
+      },
+      {
+        id: "#105",
+        topic: "Teste Final Mês 4",
+        items: [
+          { id: 1, correction: "Disseram-me...", explanation: "" },
+          { id: 2, correction: "Criou-se a lei.", explanation: "" },
+          { id: 3, correction: "Não me espere.", explanation: "" },
+          { id: 4, correction: "Espero que nos ajude.", explanation: "" },
+          { id: 5, correction: "...pune-se o infrator.", explanation: "" },
+          { id: 6, correction: "Eu o vi.", explanation: "" },
+          { id: 7, correction: "Quero fazê-lo.", explanation: "" },
+          { id: 8, correction: "O texto foi lido.", explanation: "" },
+          { id: 9, correction: "Trata-se de...", explanation: "" },
+          { id: 10, correction: "Certo.", explanation: "" },
+        ]
+      }
+    ]
+  },
+  {
+    title: "Fichas 106 a 120: Paralelismo e Vícios de Linguagem",
+    theme: 'emerald',
+    sheets: [
+      {
+        id: "#106",
+        topic: "Paralelismo (A Lei da Simetria)",
+        items: [
+          { id: 1, correction: "..., dançar e ler.", explanation: "" },
+          { id: 2, correction: "...e ao aumento do lucro.", explanation: "" },
+          { id: 3, correction: "...dedicado e corajoso.", explanation: "" },
+          { id: 4, correction: "...urgente e importante.", explanation: "" },
+          { id: 5, correction: "...e para resolver o caso.", explanation: "" },
+          { id: 6, correction: "...disciplina e estudo.", explanation: "" },
+          { id: 7, correction: "(Certo)", explanation: "" },
+          { id: 8, correction: "...tempo e dinheiro.", explanation: "" },
+          { id: 9, correction: "...o furto e o homicídio.", explanation: "" },
+          { id: 10, correction: "...crescer e se desenvolver.", explanation: "" },
+        ]
+      },
+      {
+        id: "#107",
+        topic: "Paralelismo com Conectivos",
+        items: [
+          { id: 1, correction: "os pobres.", explanation: "" },
+          { id: 2, correction: "trabalha.", explanation: "" },
+          { id: 3, correction: "(Certo)", explanation: "" },
+          { id: 4, correction: "(Certo)", explanation: "" },
+          { id: 5, correction: "(Errado) Para homens e para mulheres...", explanation: "" },
+          { id: 6, correction: "(Certo) Simetria.", explanation: "" },
+          { id: 7, correction: "(Certo)", explanation: "" },
+          { id: 8, correction: "comprar.", explanation: "" },
+          { id: 9, correction: "(Certo)", explanation: "" },
+          { id: 10, correction: "(Certo)", explanation: "" },
+        ]
+      },
+      {
+        id: "#108",
+        topic: "Ambiguidade",
+        items: [
+          { id: 1, correction: "...quarto dela.", explanation: "" },
+          { id: 2, correction: "...na sala do mestre.", explanation: "" },
+          { id: 3, correction: "...no carro do suspeito.", explanation: "" },
+          { id: 4, correction: "Vi o menino que corria.", explanation: "" },
+          { id: 5, correction: "...projeto deste.", explanation: "" },
+          { id: 6, correction: "...também o comeu.", explanation: "" },
+          { id: 7, correction: "Mataram o suíno do meu tio.", explanation: "" },
+          { id: 8, correction: "...no banco da praça.", explanation: "" },
+          { id: 9, correction: "...que a vizinha saía.", explanation: "" },
+          { id: 10, correction: "Roubaram a agência...", explanation: "" },
+        ]
+      },
+      {
+        id: "#109",
+        topic: "Gerundismo",
+        items: [
+          { id: 1, correction: "O governo criará leis.", explanation: "" },
+          { id: 2, correction: "Vou verificar.", explanation: "" },
+          { id: 3, correction: "Apresentaremos.", explanation: "" },
+          { id: 4, correction: "Poderá sair.", explanation: "" },
+          { id: 5, correction: "Resolveremos.", explanation: "" },
+          { id: 6, correction: "Abrirá vagas.", explanation: "" },
+          { id: 7, correction: "Ligarei.", explanation: "" },
+          { id: 8, correction: "Transferirão.", explanation: "" },
+          { id: 9, correction: "(Certo - ação durativa).", explanation: "" },
+          { id: 10, correction: "Aguarde que passarei.", explanation: "" },
+        ]
+      },
+      {
+        id: "#110",
+        topic: "Pleonasmo",
+        items: [
+          { id: 1, correction: "Elo.", explanation: "" },
+          { id: 2, correction: "Certeza.", explanation: "" },
+          { id: 3, correction: "Fato.", explanation: "" },
+          { id: 4, correction: "Surpresa.", explanation: "" },
+          { id: 5, correction: "Gritar.", explanation: "" },
+          { id: 6, correction: "Encarar.", explanation: "" },
+          { id: 7, correction: "Consenso.", explanation: "" },
+          { id: 8, correction: "Plano.", explanation: "" },
+          { id: 9, correction: "Hemorragia.", explanation: "" },
+          { id: 10, correction: "Protagonista.", explanation: "" },
+        ]
+      },
+      {
+        id: "#111",
+        topic: "Concisão",
+        items: [
+          { id: 1, correction: "Vamos ler.", explanation: "" },
+          { id: 2, correction: "É preciso decidir.", explanation: "" },
+          { id: 3, correction: "Em 2025.", explanation: "" },
+          { id: 4, correction: "Para passar.", explanation: "" },
+          { id: 5, correction: "Explicar.", explanation: "" },
+          { id: 6, correction: "Comprar.", explanation: "" },
+          { id: 7, correction: "Praticar/Executar.", explanation: "" },
+          { id: 8, correction: "Viajar.", explanation: "" },
+          { id: 9, correction: "Hoje / Atualmente.", explanation: "" },
+          { id: 10, correction: "Necessitar.", explanation: "" },
+        ]
+      },
+      {
+        id: "#112",
+        topic: "Cacofonia",
+        items: [
+          { id: 1, correction: "Eu a amo.", explanation: "" },
+          { id: 2, correction: "Paguei por item.", explanation: "" },
+          { id: 3, correction: "A boca de Maria / Sua boca.", explanation: "" },
+          { id: 4, correction: "Vou agora.", explanation: "" },
+          { id: 5, correction: "Havia certa mão.", explanation: "" },
+          { id: 6, correction: "Na última vez.", explanation: "" },
+          { id: 7, correction: "Muita fé.", explanation: "" },
+          { id: 8, correction: "Como você está?", explanation: "" },
+          { id: 9, correction: "Culpado pelo crime.", explanation: "" },
+          { id: 10, correction: "Ela possuía.", explanation: "" },
+        ]
+      },
+      {
+        id: "#113",
+        topic: "Estrangeirismo",
+        items: [
+          { id: 1, correction: "A entrega.", explanation: "" },
+          { id: 2, correction: "Vamos iniciar.", explanation: "" },
+          { id: 3, correction: "Deu certo / combinou.", explanation: "" },
+          { id: 4, correction: "Mentalidade.", explanation: "" },
+          { id: 5, correction: "Intimidação sistemática.", explanation: "" },
+          { id: 6, correction: "Melhoria / Atualização.", explanation: "" },
+          { id: 7, correction: "O desenho / traçado.", explanation: "" },
+          { id: 8, correction: "O orçamento.", explanation: "" },
+          { id: 9, correction: "Desempenho.", explanation: "" },
+          { id: 10, correction: "Fora do ar.", explanation: "" },
+        ]
+      },
+      {
+        id: "#114",
+        topic: "Vocabulário Preciso (Ter vs. Haver)",
+        items: [
+          { id: 1, correction: "Há muitos alunos...", explanation: "" },
+          { id: 2, correction: "Houve um acidente.", explanation: "" },
+          { id: 3, correction: "Não há vaga.", explanation: "" },
+          { id: 4, correction: "É preciso estudar.", explanation: "" },
+          { id: 5, correction: "Na cidade existe...", explanation: "" },
+          { id: 6, correction: "Há pessoas...", explanation: "" },
+          { id: 7, correction: "(Certo - Possui coesão).", explanation: "" },
+          { id: 8, correction: "Não há desculpa.", explanation: "" },
+          { id: 9, correction: "Há dias...", explanation: "" },
+          { id: 10, correction: "Houve festa.", explanation: "" },
+        ]
+      },
+      {
+        id: "#115",
+        topic: "Frases Longas",
+        items: [
+          { id: 1, correction: "A saúde é vital. Entretanto...", explanation: "" },
+          { id: 2, correction: "O aluno leu o livro. O professor...", explanation: "" },
+          { id: 3, correction: "A tecnologia ajuda, mas vicia. Por isso...", explanation: "" },
+          { id: 4, correction: "O trânsito parou, pois choveu. O temporal...", explanation: "" },
+          { id: 5, correction: "Escrever é bom. Pois organiza...", explanation: "" },
+          { id: 6, correction: "A floresta queima. Os animais...", explanation: "" },
+          { id: 7, correction: "Temos leis. Contudo...", explanation: "" },
+          { id: 8, correction: "O mundo mudou com a internet. Ela...", explanation: "" },
+          { id: 9, correction: "Ele viajou para a Europa. Lá conheceu...", explanation: "" },
+          { id: 10, correction: "O plano falhou. Visto que...", explanation: "" },
+        ]
+      },
+      {
+        id: "#116",
+        topic: "Revisão Turbo I (Mês 4)",
+        items: [
+          { id: 1, correction: "cantar e dançar.", explanation: "" },
+          { id: 2, correction: "O governo investirá.", explanation: "" },
+          { id: 3, correction: "...casa dela.", explanation: "" },
+          { id: 4, correction: "Subir.", explanation: "" },
+          { id: 5, correction: "Comparar.", explanation: "" },
+          { id: 6, correction: "Vi-a.", explanation: "" },
+          { id: 7, correction: "Há muitos problemas.", explanation: "" },
+          { id: 8, correction: "...lucro e ajuda.", explanation: "" },
+          { id: 9, correction: "...e ele passou.", explanation: "" },
+          { id: 10, correction: "Aonde...", explanation: "" },
+        ]
+      },
+      {
+        id: "#117",
+        topic: "Revisão Turbo II (Voz e Pronomes)",
+        items: [
+          { id: 1, correction: "Não se engane.", explanation: "" },
+          { id: 2, correction: "Vendem-se casas.", explanation: "" },
+          { id: 3, correction: "(Certo) Passiva Analítica.", explanation: "" },
+          { id: 4, correction: "Que me ajude.", explanation: "" },
+          { id: 5, correction: "Amo-te.", explanation: "" },
+          { id: 6, correction: "Nunca o vi.", explanation: "" },
+          { id: 7, correction: "Alugam-se.", explanation: "" },
+          { id: 8, correction: "O diretor resolveu...", explanation: "" },
+          { id: 9, correction: "(Certo - vírgula).", explanation: "" },
+          { id: 10, correction: "Empresta-me.", explanation: "" },
+        ]
+      },
+      {
+        id: "#118",
+        topic: "Revisão Turbo III (Coesão)",
+        items: [
+          { id: 1, correction: "Entretanto...", explanation: "" },
+          { id: 2, correction: "Ela...", explanation: "" },
+          { id: 3, correction: "Por conseguinte...", explanation: "" },
+          { id: 4, correction: "O aluno estudioso passa.", explanation: "" },
+          { id: 5, correction: "(Certo)", explanation: "" },
+          { id: 6, correction: "(Certo)", explanation: "" },
+          { id: 7, correction: "A qual / Em que...", explanation: "" },
+          { id: 8, correction: "Pois / Visto que...", explanation: "" },
+          { id: 9, correction: "(Certo)", explanation: "" },
+          { id: 10, correction: "Ele...", explanation: "" },
+        ]
+      },
+      {
+        id: "#119",
+        topic: "O Simulado Final",
+        items: [
+          { id: 1, correction: "A sociedade necessita de maior conscientização.", explanation: "" },
+          { id: 2, correction: "A escassez hídrica é uma questão grave.", explanation: "" },
+          { id: 3, correction: "Há muitos indivíduos que desrespeitam.", explanation: "" },
+          { id: 4, correction: "É imperativo mudarmos tal cenário.", explanation: "" },
+          { id: 5, correction: "O Poder Público criará leis.", explanation: "" },
+          { id: 6, correction: "Vi-a descartando resíduos.", explanation: "" },
+          { id: 7, correction: "Nada me disseram.", explanation: "" },
+          { id: 8, correction: "A educação e a saúde são fundamentais.", explanation: "" },
+          { id: 9, correction: "Cheguei ao limite.", explanation: "" },
+          { id: 10, correction: "Portanto, deve-se mitigar o impasse.", explanation: "" },
+        ]
+      },
+      {
+        id: "#120",
+        topic: "O Desafio Final (Mix de Elite)",
+        items: [
+          { id: 1, correction: "O governo analisará o projeto que visa ao lucro.", explanation: "Erros: Gerundismo ('vai estar analisando' -> analisará) e Regência ('visa o' -> visa ao)." },
+          { id: 2, correction: "Faz anos que a população pede melhorias.", explanation: "Erros: Concordância ('Fazem' -> Faz) e Pontuação (vírgula separando verbo e objeto)." },
+          { id: 3, correction: "Alugam-se apartamentos...", explanation: "Erro: Voz Passiva Sintética ('Aluga-se' -> Alugam-se, concordando com 'apartamentos')." },
+          { id: 4, correction: "Cheguei ao limite, mas não me calei.", explanation: "Erro: Regência ('Cheguei no' -> Cheguei ao). Próclise correta." },
+          { id: 5, correction: "É proibida a entrada de pessoas estranhas.", explanation: "Erro: Concordância. 'Entrada' especificada pede 'Proibida'." },
+          { id: 6, correction: "...arrumar o quarto desta.", explanation: "Erro: Ambiguidade ('seu quarto'). Especificar de quem é." },
+          { id: 7, correction: "Gosto de cantar, dançar e viajar.", explanation: "Erro: Paralelismo. Cortar o 'de' ou repetir em todos." },
+          { id: 8, correction: "Não me espere... pois chegarei tarde.", explanation: "Erros: Colocação Pronominal (Não atrai) e Gerundismo." },
+          { id: 9, correction: "(Certo).", explanation: "Partitivo aceita singular ou plural." },
+          { id: 10, correction: "A escassez de alimentos é um problema grave...", explanation: "Erros: Vocabulário ('Coisa'), Pleonasmo e Crase proibida." }
+        ]
+      }
+    ]
+  }
+];

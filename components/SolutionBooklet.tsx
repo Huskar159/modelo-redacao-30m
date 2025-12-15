@@ -1,16 +1,35 @@
 import React, { useState } from 'react';
 import { BookMarked, CheckCircle2 } from 'lucide-react';
-import { SOLUTIONS_VOL_1, SOLUTIONS_VOL_2 } from '../solutionConstants';
+import { SOLUTIONS_VOL_1, SOLUTIONS_VOL_2, SOLUTIONS_VOL_3, SOLUTIONS_VOL_4 } from '../solutionConstants';
 import { SolutionSection } from '../types';
 
 export const SolutionBooklet: React.FC = () => {
-  const [activeVolume, setActiveVolume] = useState<1 | 2>(1);
+  const [activeVolume, setActiveVolume] = useState<1 | 2 | 3 | 4>(1);
 
-  const currentSolutions = activeVolume === 1 ? SOLUTIONS_VOL_1 : SOLUTIONS_VOL_2;
-  const volumeTitle = activeVolume === 1 ? "VOLUME 1" : "VOLUME 2";
-  const volumeSubtitle = activeVolume === 1 
-    ? "Mês 1: Domínio da Pontuação e Crase" 
-    : "Mês 2: Concordância e Regência";
+  const getCurrentSolutions = () => {
+    switch (activeVolume) {
+      case 1: return SOLUTIONS_VOL_1;
+      case 2: return SOLUTIONS_VOL_2;
+      case 3: return SOLUTIONS_VOL_3;
+      case 4: return SOLUTIONS_VOL_4;
+      default: return SOLUTIONS_VOL_1;
+    }
+  };
+
+  const currentSolutions = getCurrentSolutions();
+  const volumeTitle = `VOLUME ${activeVolume}`;
+  
+  const getVolumeSubtitle = () => {
+    switch (activeVolume) {
+      case 1: return "Mês 1: Domínio da Pontuação e Crase";
+      case 2: return "Mês 2: Concordância e Regência";
+      case 3: return "Mês 3: Operadores Argumentativos e Coesão";
+      case 4: return "Mês 4: Voz, Pronomes e Estilo";
+      default: return "";
+    }
+  };
+
+  const volumeSubtitle = getVolumeSubtitle();
 
   return (
     <div className="a4-multipage flex flex-col font-sans">
@@ -18,27 +37,20 @@ export const SolutionBooklet: React.FC = () => {
       {/* Title Page / Header */}
       <header className="border-b-4 border-gray-900 pb-4 mb-6 text-center shrink-0">
         <div className="flex flex-col items-center gap-4 no-print">
-            <div className="flex gap-2 mb-2 p-1 bg-gray-100 rounded-lg">
-                <button 
-                    onClick={() => setActiveVolume(1)}
+            <div className="flex gap-2 mb-2 p-1 bg-gray-100 rounded-lg flex-wrap justify-center">
+                {[1, 2, 3, 4].map((vol) => (
+                  <button 
+                    key={vol}
+                    onClick={() => setActiveVolume(vol as 1|2|3|4)}
                     className={`px-4 py-2 rounded-md text-sm font-bold transition-all ${
-                        activeVolume === 1 
+                        activeVolume === vol 
                         ? 'bg-white shadow text-gray-900' 
                         : 'text-gray-500 hover:text-gray-700'
                     }`}
-                >
-                    Volume 1
-                </button>
-                <button 
-                    onClick={() => setActiveVolume(2)}
-                    className={`px-4 py-2 rounded-md text-sm font-bold transition-all ${
-                        activeVolume === 2 
-                        ? 'bg-white shadow text-gray-900' 
-                        : 'text-gray-500 hover:text-gray-700'
-                    }`}
-                >
-                    Volume 2
-                </button>
+                  >
+                    Volume {vol}
+                  </button>
+                ))}
             </div>
         </div>
 
@@ -74,6 +86,11 @@ export const SolutionBooklet: React.FC = () => {
             borderColor = 'border-amber-200';
             bgColor = 'bg-amber-50';
             numberBg = 'bg-amber-600';
+          } else if (section.theme === 'emerald') {
+            themeColor = 'text-emerald-700';
+            borderColor = 'border-emerald-200';
+            bgColor = 'bg-emerald-50';
+            numberBg = 'bg-emerald-600';
           }
 
           return (

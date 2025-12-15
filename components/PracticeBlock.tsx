@@ -4,7 +4,7 @@ import { ExerciseItem } from '../types';
 
 interface Props {
   exercises: ExerciseItem[];
-  theme?: 'teal' | 'indigo' | 'rose' | 'amber';
+  theme?: 'teal' | 'indigo' | 'rose' | 'amber' | 'emerald';
 }
 
 export const PracticeBlock: React.FC<Props> = ({ exercises, theme = 'teal' }) => {
@@ -18,6 +18,15 @@ export const PracticeBlock: React.FC<Props> = ({ exercises, theme = 'teal' }) =>
 
   const getThemeStyles = () => {
     switch (theme) {
+      case 'emerald':
+        return {
+          iconBg: 'bg-emerald-50',
+          iconColor: 'text-emerald-700',
+          checkActive: 'bg-emerald-600 border-emerald-600',
+          checkHover: 'hover:border-emerald-400',
+          focusBorder: 'focus:border-emerald-600',
+          inputText: 'text-emerald-900'
+        };
       case 'amber':
         return {
           iconBg: 'bg-amber-50',
@@ -102,7 +111,7 @@ export const PracticeBlock: React.FC<Props> = ({ exercises, theme = 'teal' }) =>
                     <input 
                       type="text" 
                       className={`w-full bg-transparent border-b-2 border-dotted border-gray-300 ${styles.focusBorder} outline-none text-sm py-1 ${styles.inputText} placeholder-gray-400 transition-colors font-mono`}
-                      placeholder={exercise.placeholder}
+                      placeholder=""
                       disabled={isDone}
                     />
                   </div>

@@ -9,11 +9,13 @@ import { DesignOverlay } from './components/DesignOverlay';
 import { SolutionBooklet } from './components/SolutionBooklet';
 import { SHEETS } from './constants';
 import { MODEL_SHEETS } from './modelConstants';
+import { MONTH_3_SHEETS } from './month3Constants';
+import { MONTH_4_SHEETS } from './month4Constants';
 import { TrainingSheetData } from './types';
 
 const App: React.FC = () => {
   const [showAnnotations, setShowAnnotations] = useState(true);
-  const [mode, setMode] = useState<'worksheets' | 'model' | 'solutions'>('worksheets');
+  const [mode, setMode] = useState<'worksheets' | 'model' | 'month3' | 'month4' | 'solutions'>('worksheets');
 
   const handlePrint = () => {
     window.focus();
@@ -106,6 +108,28 @@ const App: React.FC = () => {
 
           <button 
             type="button"
+            onClick={() => setMode('month3')}
+            className={`p-3 rounded-full shadow-lg transition-all hover:scale-105 flex items-center justify-end md:justify-center gap-2 font-medium ${
+              mode === 'month3' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
+            }`}
+          >
+            <FileText size={20} />
+            <span className="hidden md:inline">Mês 3</span>
+          </button>
+
+          <button 
+            type="button"
+            onClick={() => setMode('month4')}
+            className={`p-3 rounded-full shadow-lg transition-all hover:scale-105 flex items-center justify-end md:justify-center gap-2 font-medium ${
+              mode === 'month4' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
+            }`}
+          >
+            <FileText size={20} />
+            <span className="hidden md:inline">Mês 4</span>
+          </button>
+
+          <button 
+            type="button"
             onClick={() => setMode('solutions')}
             className={`p-3 rounded-full shadow-lg transition-all hover:scale-105 flex items-center justify-end md:justify-center gap-2 font-medium ${
               mode === 'solutions' ? 'bg-gray-900 text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
@@ -118,7 +142,7 @@ const App: React.FC = () => {
 
         <div className="w-full h-px bg-gray-300 my-1"></div>
 
-        {/* Toggle Annotations Button (Only visible in Worksheet/Model mode) */}
+        {/* Toggle Annotations Button (Only visible in Worksheet/Model/Month3 mode) */}
         {mode !== 'solutions' && (
           <button 
             type="button"
@@ -154,6 +178,10 @@ const App: React.FC = () => {
       {mode === 'worksheets' && SHEETS.map(renderSheet)}
       
       {mode === 'model' && MODEL_SHEETS.map(renderSheet)}
+
+      {mode === 'month3' && MONTH_3_SHEETS.map(renderSheet)}
+
+      {mode === 'month4' && MONTH_4_SHEETS.map(renderSheet)}
 
     </div>
   );
